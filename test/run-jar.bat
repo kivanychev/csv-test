@@ -1,0 +1,1 @@
+java -jar project1-1.0-SNAPSHOT-jar-with-dependencies.jar 1000 20 ./csv
