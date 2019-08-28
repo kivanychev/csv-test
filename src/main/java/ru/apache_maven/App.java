@@ -34,18 +34,9 @@ public class App {
     // Local variables
     public static double maxPrice;
     public static double minPrice;
+    public static String csvPath;
 
-     /**
-     * Returns a value by {@link Enum}.
-     *
-     * @param e
-     *            an enum
-     * @return the String at the given enum String
-     */
-    private void getNextRecords(int currentPrice){
-        return;
-    }
-
+   
     /**
      * Returns Max and Min values for Price fields in a map.
      *
@@ -53,7 +44,7 @@ public class App {
      *            A path to the directory that contains CSV files
      * @return none
      */
-    private static void FindMinMaxPriceThread(String csvPath){
+    private static void FindMinMaxPriceThread(){
         PriceRangeFinderThread finderThread;
         ArrayList<PriceRangeFinderThread> threadArray = new ArrayList<PriceRangeFinderThread>();
         
@@ -88,31 +79,28 @@ public class App {
                 minPrice = priceThread.GetMinPrice();
             }   
         }
-        System.out.println("Min price = " + minPrice + " Max price = " + maxPrice);
-
         
     }
 
     /**
-     * Returns Max and Min values for Price fields in a map.
+     * Returns next price for the specified value.
      *
-     * @param csvPath
-     *            A path to the directory that contains CSV files
-     * @return none
+     * @param currentPrice
+     *            Current value of price that is taken as a reference for finding next one
+     * @return value of the next price
      */
-    private static void findMinMaxPrice(String csvPath) {
-        double price_double;
-
-        maxPrice = 0.0;
-        minPrice = -1.0;
+    private static double FindNextPrice(double currentPrice) {
+        double nextPrice = maxPrice;
+        double csvPrice;
 
         File myFolder = new File(csvPath);
         File[] files = myFolder.listFiles();
-        
+    
         // Check all files
         for (int i = 0; i < files.length; i++) {
-
-            if (!files[i].isFile()) {
+            if (files[i].isFile()) {
+                if(App.DEBUG) System.out.print("File: " + files[i].getName() + " - ");
+            } else {
                 continue;
             }
     
@@ -127,31 +115,73 @@ public class App {
                 // Find in current CSV file
                 for (CSVRecord csvRecord : csvParser) {
                     String price = csvRecord.get(IPRIICE);
-                    price_double = Double.parseDouble(price);
+                    csvPrice = Double.parseDouble(price);
 
-                    if(minPrice == -1.0){
-                        minPrice = price_double;
-                        System.out.println("\r\nFirst time minPrice = " + minPrice);
+                    if(csvPrice > currentPrice && csvPrice < nextPrice) {
+                        nextPrice = csvPrice;
                     }
+                }
 
-                    if(price_double > maxPrice) {
-                        maxPrice = price_double;
-                        System.out.println("Max price changed to: " + maxPrice + " in " + files[i].getName());
-                    }
-
-                    if(price_double < minPrice) {
-                        minPrice = price_double;
-                        System.out.println("Min price changed to: " + minPrice + " in " + files[i].getName());
-                    }
-                } // for(...) on a single CSV file
-
-            } 
+            }
             catch(Exception e){
                 e.printStackTrace();
-            }
-        } // for(...) on all CSV files
-        System.out.println("Min price: " + minPrice + "  Max price: "+ maxPrice);
+            } 
 
+        } // for(...) on all CSV files
+
+        return nextPrice;
+    }
+
+
+
+    /**
+     * Returns a list of records for the specified price.
+     *
+     * @param currentPrice
+     *            A price value for searching recirds
+     * @return none
+     */
+    private static ArrayList<CSVRecord> GetRecordsForPrice(double currentPrice) {
+        ArrayList<CSVRecord> recordsList = new ArrayList<CSVRecord>();
+        double csvPrice;
+    
+        File myFolder = new File(csvPath);
+        File[] files = myFolder.listFiles();
+    
+        // Check all files
+        for (int i = 0; i < files.length; i++) {
+            if (files[i].isFile()) {
+                if(App.DEBUG) System.out.print("File: " + files[i].getName() + " - ");
+            } else {
+                continue;
+            }
+    
+            // Read single CSV file
+            try ( Reader reader = Files.newBufferedReader(Paths.get(csvPath + "/" + files[i].getName()));
+                  CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
+                    .withFirstRecordAsHeader()
+                    .withIgnoreHeaderCase()
+                    .withTrim());
+                ) {
+
+                // Find in current CSV file
+                for (CSVRecord csvRecord : csvParser) {
+                    String price = csvRecord.get(IPRIICE);
+                    csvPrice = Double.parseDouble(price);
+
+                    if(csvPrice == currentPrice) {
+                        recordsList.add(csvRecord);
+                    }
+                }
+
+            }
+            catch(Exception e){
+                e.printStackTrace();
+            } 
+
+        } // for(...) on all CSV files
+
+        return recordsList;
     }
 
 
@@ -171,80 +201,90 @@ public class App {
         }
 
         // Read application parameters
-        int maxOutRecords = Integer.parseInt(args[0]);
-        int maxUniqueRecords = Integer.parseInt(args[1]);
+        int maxOutRecordsCnt = Integer.parseInt(args[0]);
+        int maxUniqueIdRecordsCnt = Integer.parseInt(args[1]);
+
+        // Contains IDs for the added CSV records
+        HashMap<String, String> idMap = new HashMap<String, String>();
 
         // Check if the specified path exists
-        String csvPath = args[2];
+        csvPath = args[2];
         File csvDir = new File(csvPath);
         if(!csvDir.exists()){
             System.out.println("Please specify existing path!");
             return;
         }
 
-        FindMinMaxPriceThread(csvPath);
+        ArrayList<CSVRecord> recordsList;
+        double currentPrice;
+        int outRecordsCnt = 0;      // top is maxOutRecordsCnt
 
-
-        File myFolder = new File(csvPath);
-        File[] files = myFolder.listFiles();
-        
-        String searchID = "378538";
-        int foundRecords = 0;
+        System.out.println("Finding prices range...");
+        FindMinMaxPriceThread();
+        System.out.println("Min price = " + minPrice + " Max price = " + maxPrice);
 
         BufferedWriter writer = Files.newBufferedWriter(Paths.get(SAMPLE_CSV_FILE));          
         CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
                                         .withHeader("ID", "Name", "Condition", "State", "Price"));
 
-        // Check all files
-        for (int i = 0; i < files.length; i++) {
-            int recordsCnt = 0;
 
-            if (files[i].isFile()) {
-                System.out.print("File: " + files[i].getName() + " - ");
-            } else {
-                continue;
-            }
-    
-            // Read single CSV file
-            try ( Reader reader = Files.newBufferedReader(Paths.get(csvPath + "/" + files[i].getName()));
-                  CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
-                    .withFirstRecordAsHeader()
-                    .withIgnoreHeaderCase()
-                    .withTrim());
-                ) {
+        for(currentPrice = minPrice; currentPrice <= maxPrice; ) {
+            recordsList = GetRecordsForPrice(currentPrice);
+            System.out.println("\r\nRecords for price: " + currentPrice);
 
-        
+            // For current price Check if the CSV records with their ID may be put to resulting file
+            for(CSVRecord csvRecord : recordsList) {
+                String id = csvRecord.get(IID);
+                String name = csvRecord.get(INAME);
+                String condition = csvRecord.get(ICONDITION);
+                String state = csvRecord.get(ISTATE);
+                String price = csvRecord.get(IPRIICE);
 
-                // Find in current CSV file
-                for (CSVRecord csvRecord : csvParser) {
+                System.out.print("\t" + id + "\t" + name + "\t" + condition + "\t" + state + "\t" + price + " - ");
 
-                    // Accessing Values by Column Index
-                    String id = csvRecord.get(IID);
-                    String name = csvRecord.get(INAME);
-                    String condition = csvRecord.get(ICONDITION);
-                    String state = csvRecord.get(ISTATE);
-                    String price = csvRecord.get(IPRIICE);
+                // Check if record with such ID may be added to 
 
-                    // Read
-                    if(id.equals(searchID)) {
-                        csvPrinter.printRecord(id, name, condition, state, price);
-                        foundRecords++;
+                // Create counter for ID if it does not exist
+                if(!idMap.containsKey(id)) {
+                    idMap.put(id, "0");
+                }
+
+                // Get counter value
+                String cntValueStr = idMap.get(id);
+                int cntValueInt = Integer.parseInt(cntValueStr);
+
+                // Store new counter value for current ID
+                if(cntValueInt < maxUniqueIdRecordsCnt) {
+                    cntValueInt++;
+                    cntValueStr = Integer.toString(cntValueInt);
+
+                    idMap.replace(id, cntValueStr);
+
+                    // Write the CSV record to resulting file
+                    System.out.println("WRITTEN");
+                    csvPrinter.printRecord(id, name, condition, state, price);
+
+                    outRecordsCnt++;
+                    if(outRecordsCnt >= maxOutRecordsCnt) {
+                        System.out.println("Finished");
+                        csvPrinter.flush();
+                        csvPrinter.close();  
+                        return;
                     }
+                }
+                else {    
+                    // Inform about skipped CSV record
+                    System.out.println("SKIPPED");
+                }
+            }
 
-                    recordsCnt++;
-                } // for(...) on a single CSV file
+            System.out.print("\r\nFind nextPrice for " + currentPrice + " ... ");
+            currentPrice = FindNextPrice(currentPrice);
+            System.out.println(currentPrice);
 
-                System.out.println(recordsCnt + " records");
-            } 
+        } // for(currentPrice ...
 
-        } // for(...) on all CSV files
-
-        csvPrinter.flush();
-        csvPrinter.close();            
-
-        System.out.println("Found records: " + foundRecords);
-
-    }
+    } // main() ...
 
 }
 
