@@ -1,0 +1,4 @@
+MANIFEST.MF
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+test/result.csv
+test/csv/csv1.csv
