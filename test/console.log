@@ -1,0 +1,211 @@
+F:\Projects\Test\Maven\project1\test>java -jar project1-1.0-SNAPSHOT-jar-with-dependencies.jar 50 4 ./csv
+
+Finding prices range...
+Min price = 0.03 Max price = 4954.79
+
+Records for price: 0.03
+        1       good1   C1      S1      0.03 - WRITTEN 0
+
+Find nextPrice for 0.03 ... 0.04
+
+Records for price: 0.04
+        1       good1   C1      S1      0.04 - WRITTEN 1
+        1       good1   C1      S1      0.04 - WRITTEN 2
+
+Find nextPrice for 0.04 ... 0.05
+
+Records for price: 0.05
+        1       good1   C1      S1      0.05 - WRITTEN 3
+
+Find nextPrice for 0.05 ... 0.06
+
+Records for price: 0.06
+        1       good1   C1      S1      0.06 - SKIPPED
+
+Find nextPrice for 0.06 ... 0.07
+
+Records for price: 0.07
+        1       good1   C1      S1      0.07 - SKIPPED
+
+Find nextPrice for 0.07 ... 0.08
+
+Records for price: 0.08
+        1       good1   C1      S1      0.08 - SKIPPED
+
+Find nextPrice for 0.08 ... 0.09
+
+Records for price: 0.09
+        1       good1   C1      S1      0.09 - SKIPPED
+
+Find nextPrice for 0.09 ... 0.1
+
+Records for price: 0.1
+        1       good1   C1      S1      0.10 - SKIPPED
+
+Find nextPrice for 0.1 ... 0.11
+
+Records for price: 0.11
+        1       good1   C1      S1      0.11 - SKIPPED
+
+Find nextPrice for 0.11 ... 0.12
+
+Records for price: 0.12
+        1       good1   C1      S1      0.12 - SKIPPED
+
+Find nextPrice for 0.12 ... 0.13
+
+Records for price: 0.13
+        1       good1   C1      S1      0.13 - SKIPPED
+
+Find nextPrice for 0.13 ... 0.14
+
+Records for price: 0.14
+        1       good1   C1      S1      0.14 - SKIPPED
+
+Find nextPrice for 0.14 ... 0.15
+
+Records for price: 0.15
+        1       good1   C1      S1      0.15 - SKIPPED
+
+Find nextPrice for 0.15 ... 0.16
+
+Records for price: 0.16
+        1       good1   C1      S1      0.16 - SKIPPED
+
+Find nextPrice for 0.16 ... 0.17
+
+Records for price: 0.17
+        1       good1   C1      S1      0.17 - SKIPPED
+
+Find nextPrice for 0.17 ... 0.18
+
+Records for price: 0.18
+        1       good1   C1      S1      0.18 - SKIPPED
+
+Find nextPrice for 0.18 ... 0.19
+
+Records for price: 0.19
+        1       good1   C1      S1      0.19 - SKIPPED
+
+Find nextPrice for 0.19 ... 0.2
+
+Records for price: 0.2
+        1       good1   C1      S1      0.20 - SKIPPED
+
+Find nextPrice for 0.2 ... 0.21
+
+Records for price: 0.21
+        1       good1   C1      S1      0.21 - SKIPPED
+
+Find nextPrice for 0.21 ... 0.99
+
+Records for price: 0.99
+        1       good1   C1      S1      0.99 - SKIPPED
+        1       good1   C1      S1      0.99 - SKIPPED
+
+Find nextPrice for 0.99 ... 1.5
+
+Records for price: 1.5
+        6       good6   C6      S6      1.50 - WRITTEN 4
+
+Find nextPrice for 1.5 ... 3.5
+
+Records for price: 3.5
+        1       good1   C1      S1      3.50 - SKIPPED
+
+Find nextPrice for 3.5 ... 3.8
+
+Records for price: 3.8
+        3       good3   C2      S2      3.80 - WRITTEN 5
+
+Find nextPrice for 3.8 ... 5.0
+
+Records for price: 5.0
+        3       good3   C3      S3      5.00 - WRITTEN 6
+
+Find nextPrice for 5.0 ... 5.5
+
+Records for price: 5.5
+        7       good7   C7      S7      5.50 - WRITTEN 7
+
+Find nextPrice for 5.5 ... 8.12
+
+Records for price: 8.12
+        9       good9   C9      S9      8.12 - WRITTEN 8
+        13      good13  C13     S13     8.12 - WRITTEN 9
+        9       good9   C9      S9      8.120 - WRITTEN 10
+        13      good13  C13     S13     8.12 - WRITTEN 11
+
+Find nextPrice for 8.12 ... 8.5
+
+Records for price: 8.5
+        2       good2   C2      S2      8.50 - WRITTEN 12
+
+Find nextPrice for 8.5 ... 9.1
+
+Records for price: 9.1
+        9       good9   C8      S9      9.10 - WRITTEN 13
+        9       good9   C8      S9      9.100 - WRITTEN 14
+
+Find nextPrice for 9.1 ... 9.3
+
+Records for price: 9.3
+        2       good2   C1      S2      9.30 - WRITTEN 15
+        2       good2   C1      S2      9.30 - WRITTEN 16
+        2       good2   C1      S2      9.30 - WRITTEN 17
+        2       good2   C1      S2      9.30 - SKIPPED
+
+Find nextPrice for 9.3 ... 9.8
+
+Records for price: 9.8
+        8       good8   C8      S8      9.80 - WRITTEN 18
+        8       good8   C8      S8      9.80 - WRITTEN 19
+
+Find nextPrice for 9.8 ... 10.0
+
+Records for price: 10.0
+        18455   Historical fiction      C33     S22     10.0 - WRITTEN 20
+        2109    Fable   C23     S86     10.0 - WRITTEN 21
+
+Find nextPrice for 10.0 ... 10.01
+
+Records for price: 10.01
+        6215967 Mystery C04     S77     10.01 - WRITTEN 22
+        195     Fairy tale      C06     S07     10.01 - WRITTEN 23
+        69710074        Mythopoeia      C38     S20     10.01 - WRITTEN 24
+        7224    Fantasy C66     S02     10.01 - WRITTEN 25
+        591276658       Fiction narrative       C77     S22     10.01 - WRITTEN 26
+        431549822       Historical fiction      C87     S81     10.01 - WRITTEN 27
+        2       Comic/Graphic Novel     C03     S33     10.01 - SKIPPED
+        2       Reference book  C78     S71     10.01 - SKIPPED
+        872752105       Science fiction C24     S49     10.01 - WRITTEN 28
+
+Find nextPrice for 10.01 ... 10.02
+
+Records for price: 10.02
+        60734   Narrative nonfiction    C54     S80     10.02 - WRITTEN 29
+        5099598 Fairy tale      C10     S67     10.02 - WRITTEN 30
+        803003777       Speech  C87     S53     10.02 - WRITTEN 31
+        27919   Mythology       C14     S94     10.02 - WRITTEN 32
+        288268127       Mystery C11     S58     10.02 - WRITTEN 33
+        282262828       Mythology       C27     S62     10.02 - WRITTEN 34
+        13      Fiction narrative       C61     S78     10.02 - WRITTEN 35
+        9864744 Speech  C28     S23     10.02 - WRITTEN 36
+        421     Suspense/Thriller       C73     S76     10.02 - WRITTEN 37
+        6741791 Realistic fiction       C78     S68     10.02 - WRITTEN 38
+        23219   Fable   C38     S83     10.02 - WRITTEN 39
+        0       Mythopoeia      C78     S50     10.02 - WRITTEN 40
+        72169   Fantasy C98     S50     10.02 - WRITTEN 41
+
+Find nextPrice for 10.02 ... 10.03
+
+Records for price: 10.03
+        44082106        Mystery C40     S94     10.03 - WRITTEN 42
+        4       Mystery C22     S67     10.03 - WRITTEN 43
+        582369659       Speech  C36     S62     10.03 - WRITTEN 44
+        430568  Mystery C91     S67     10.03 - WRITTEN 45
+        99058583        Crime/Detective C04     S16     10.03 - WRITTEN 46
+        3909487 Reference book  C45     S10     10.03 - WRITTEN 47
+        29356   Fable   C13     S08     10.03 - WRITTEN 48
+        13034252        Fiction narrative       C87     S11     10.03 - WRITTEN 49
+Finished
