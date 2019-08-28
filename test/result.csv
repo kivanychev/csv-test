@@ -1,0 +1,51 @@
+ID,Name,Condition,State,Price
+1,good1,C1,S1,0.03
+1,good1,C1,S1,0.04
+1,good1,C1,S1,0.04
+1,good1,C1,S1,0.05
+6,good6,C6,S6,1.50
+3,good3,C2,S2,3.80
+3,good3,C3,S3,5.00
+7,good7,C7,S7,5.50
+9,good9,C9,S9,8.12
+13,good13,C13,S13,8.12
+9,good9,C9,S9,8.120
+13,good13,C13,S13,8.12
+2,good2,C2,S2,8.50
+9,good9,C8,S9,9.10
+9,good9,C8,S9,9.100
+2,good2,C1,S2,9.30
+2,good2,C1,S2,9.30
+2,good2,C1,S2,9.30
+8,good8,C8,S8,9.80
+8,good8,C8,S8,9.80
+18455,Historical fiction,C33,S22,10.0
+2109,Fable,C23,S86,10.0
+6215967,Mystery,C04,S77,10.01
+195,Fairy tale,C06,S07,10.01
+69710074,Mythopoeia,C38,S20,10.01
+7224,Fantasy,C66,S02,10.01
+591276658,Fiction narrative,C77,S22,10.01
+431549822,Historical fiction,C87,S81,10.01
+872752105,Science fiction,C24,S49,10.01
+60734,Narrative nonfiction,C54,S80,10.02
+5099598,Fairy tale,C10,S67,10.02
+803003777,Speech,C87,S53,10.02
+27919,Mythology,C14,S94,10.02
+288268127,Mystery,C11,S58,10.02
+282262828,Mythology,C27,S62,10.02
+13,Fiction narrative,C61,S78,10.02
+9864744,Speech,C28,S23,10.02
+421,Suspense/Thriller,C73,S76,10.02
+6741791,Realistic fiction,C78,S68,10.02
+23219,Fable,C38,S83,10.02
+0,Mythopoeia,C78,S50,10.02
+72169,Fantasy,C98,S50,10.02
+44082106,Mystery,C40,S94,10.03
+4,Mystery,C22,S67,10.03
+582369659,Speech,C36,S62,10.03
+430568,Mystery,C91,S67,10.03
+99058583,Crime/Detective,C04,S16,10.03
+3909487,Reference book,C45,S10,10.03
+29356,Fable,C13,S08,10.03
+13034252,Fiction narrative,C87,S11,10.03
