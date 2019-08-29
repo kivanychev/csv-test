@@ -1,211 +1,1717 @@
-F:\Projects\Test\Maven\project1\test>java -jar project1-1.0-SNAPSHOT-jar-with-dependencies.jar 50 4 ./csv
-
+F:\Projects\Test\Maven\project1\test>java -jar project1-1.0-SNAPSHOT-jar-with-dependencies.jar 1000 20 ./csv
+Reading all prices...494465 values
 Finding prices range...
 Min price = 0.03 Max price = 4954.79
-
-Records for price: 0.03
-        1       good1   C1      S1      0.03 - WRITTEN 0
-
-Find nextPrice for 0.03 ... 0.04
-
-Records for price: 0.04
-        1       good1   C1      S1      0.04 - WRITTEN 1
-        1       good1   C1      S1      0.04 - WRITTEN 2
-
-Find nextPrice for 0.04 ... 0.05
-
-Records for price: 0.05
-        1       good1   C1      S1      0.05 - WRITTEN 3
-
-Find nextPrice for 0.05 ... 0.06
-
-Records for price: 0.06
-        1       good1   C1      S1      0.06 - SKIPPED
-
-Find nextPrice for 0.06 ... 0.07
-
-Records for price: 0.07
-        1       good1   C1      S1      0.07 - SKIPPED
-
-Find nextPrice for 0.07 ... 0.08
-
-Records for price: 0.08
-        1       good1   C1      S1      0.08 - SKIPPED
-
-Find nextPrice for 0.08 ... 0.09
-
-Records for price: 0.09
-        1       good1   C1      S1      0.09 - SKIPPED
-
-Find nextPrice for 0.09 ... 0.1
-
-Records for price: 0.1
-        1       good1   C1      S1      0.10 - SKIPPED
-
-Find nextPrice for 0.1 ... 0.11
-
-Records for price: 0.11
-        1       good1   C1      S1      0.11 - SKIPPED
-
-Find nextPrice for 0.11 ... 0.12
-
-Records for price: 0.12
-        1       good1   C1      S1      0.12 - SKIPPED
-
-Find nextPrice for 0.12 ... 0.13
-
-Records for price: 0.13
-        1       good1   C1      S1      0.13 - SKIPPED
-
-Find nextPrice for 0.13 ... 0.14
-
-Records for price: 0.14
-        1       good1   C1      S1      0.14 - SKIPPED
-
-Find nextPrice for 0.14 ... 0.15
-
-Records for price: 0.15
-        1       good1   C1      S1      0.15 - SKIPPED
-
-Find nextPrice for 0.15 ... 0.16
-
-Records for price: 0.16
-        1       good1   C1      S1      0.16 - SKIPPED
-
-Find nextPrice for 0.16 ... 0.17
-
-Records for price: 0.17
-        1       good1   C1      S1      0.17 - SKIPPED
-
-Find nextPrice for 0.17 ... 0.18
-
-Records for price: 0.18
-        1       good1   C1      S1      0.18 - SKIPPED
-
-Find nextPrice for 0.18 ... 0.19
-
-Records for price: 0.19
-        1       good1   C1      S1      0.19 - SKIPPED
-
-Find nextPrice for 0.19 ... 0.2
-
-Records for price: 0.2
-        1       good1   C1      S1      0.20 - SKIPPED
-
-Find nextPrice for 0.2 ... 0.21
-
-Records for price: 0.21
-        1       good1   C1      S1      0.21 - SKIPPED
-
-Find nextPrice for 0.21 ... 0.99
-
-Records for price: 0.99
-        1       good1   C1      S1      0.99 - SKIPPED
-        1       good1   C1      S1      0.99 - SKIPPED
-
-Find nextPrice for 0.99 ... 1.5
-
-Records for price: 1.5
-        6       good6   C6      S6      1.50 - WRITTEN 4
-
-Find nextPrice for 1.5 ... 3.5
-
-Records for price: 3.5
-        1       good1   C1      S1      3.50 - SKIPPED
-
-Find nextPrice for 3.5 ... 3.8
-
-Records for price: 3.8
-        3       good3   C2      S2      3.80 - WRITTEN 5
-
-Find nextPrice for 3.8 ... 5.0
-
-Records for price: 5.0
-        3       good3   C3      S3      5.00 - WRITTEN 6
-
-Find nextPrice for 5.0 ... 5.5
-
-Records for price: 5.5
-        7       good7   C7      S7      5.50 - WRITTEN 7
-
-Find nextPrice for 5.5 ... 8.12
-
-Records for price: 8.12
-        9       good9   C9      S9      8.12 - WRITTEN 8
-        13      good13  C13     S13     8.12 - WRITTEN 9
-        9       good9   C9      S9      8.120 - WRITTEN 10
-        13      good13  C13     S13     8.12 - WRITTEN 11
-
-Find nextPrice for 8.12 ... 8.5
-
-Records for price: 8.5
-        2       good2   C2      S2      8.50 - WRITTEN 12
-
-Find nextPrice for 8.5 ... 9.1
-
-Records for price: 9.1
-        9       good9   C8      S9      9.10 - WRITTEN 13
-        9       good9   C8      S9      9.100 - WRITTEN 14
-
-Find nextPrice for 9.1 ... 9.3
-
-Records for price: 9.3
-        2       good2   C1      S2      9.30 - WRITTEN 15
-        2       good2   C1      S2      9.30 - WRITTEN 16
-        2       good2   C1      S2      9.30 - WRITTEN 17
-        2       good2   C1      S2      9.30 - SKIPPED
-
-Find nextPrice for 9.3 ... 9.8
-
-Records for price: 9.8
-        8       good8   C8      S8      9.80 - WRITTEN 18
-        8       good8   C8      S8      9.80 - WRITTEN 19
-
-Find nextPrice for 9.8 ... 10.0
-
-Records for price: 10.0
-        18455   Historical fiction      C33     S22     10.0 - WRITTEN 20
-        2109    Fable   C23     S86     10.0 - WRITTEN 21
-
-Find nextPrice for 10.0 ... 10.01
-
-Records for price: 10.01
-        6215967 Mystery C04     S77     10.01 - WRITTEN 22
-        195     Fairy tale      C06     S07     10.01 - WRITTEN 23
-        69710074        Mythopoeia      C38     S20     10.01 - WRITTEN 24
-        7224    Fantasy C66     S02     10.01 - WRITTEN 25
-        591276658       Fiction narrative       C77     S22     10.01 - WRITTEN 26
-        431549822       Historical fiction      C87     S81     10.01 - WRITTEN 27
-        2       Comic/Graphic Novel     C03     S33     10.01 - SKIPPED
-        2       Reference book  C78     S71     10.01 - SKIPPED
-        872752105       Science fiction C24     S49     10.01 - WRITTEN 28
-
-Find nextPrice for 10.01 ... 10.02
-
-Records for price: 10.02
-        60734   Narrative nonfiction    C54     S80     10.02 - WRITTEN 29
-        5099598 Fairy tale      C10     S67     10.02 - WRITTEN 30
-        803003777       Speech  C87     S53     10.02 - WRITTEN 31
-        27919   Mythology       C14     S94     10.02 - WRITTEN 32
-        288268127       Mystery C11     S58     10.02 - WRITTEN 33
-        282262828       Mythology       C27     S62     10.02 - WRITTEN 34
-        13      Fiction narrative       C61     S78     10.02 - WRITTEN 35
-        9864744 Speech  C28     S23     10.02 - WRITTEN 36
-        421     Suspense/Thriller       C73     S76     10.02 - WRITTEN 37
-        6741791 Realistic fiction       C78     S68     10.02 - WRITTEN 38
-        23219   Fable   C38     S83     10.02 - WRITTEN 39
-        0       Mythopoeia      C78     S50     10.02 - WRITTEN 40
-        72169   Fantasy C98     S50     10.02 - WRITTEN 41
-
-Find nextPrice for 10.02 ... 10.03
-
-Records for price: 10.03
-        44082106        Mystery C40     S94     10.03 - WRITTEN 42
-        4       Mystery C22     S67     10.03 - WRITTEN 43
-        582369659       Speech  C36     S62     10.03 - WRITTEN 44
-        430568  Mystery C91     S67     10.03 - WRITTEN 45
-        99058583        Crime/Detective C04     S16     10.03 - WRITTEN 46
-        3909487 Reference book  C45     S10     10.03 - WRITTEN 47
-        29356   Fable   C13     S08     10.03 - WRITTEN 48
-        13034252        Fiction narrative       C87     S11     10.03 - WRITTEN 49
+Selecting Records for price 0.03 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.03 - WRITTEN:0
+
+Next Price is 0.04Selecting Records for price 0.04 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.04 - WRITTEN:1
+           1 |                           good1 |          C1 |          S1 |        0.04 - WRITTEN:2
+
+Next Price is 0.05Selecting Records for price 0.05 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.05 - WRITTEN:3
+
+Next Price is 0.06Selecting Records for price 0.06 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.06 - WRITTEN:4
+
+Next Price is 0.07Selecting Records for price 0.07 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.07 - WRITTEN:5
+
+Next Price is 0.08Selecting Records for price 0.08 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.08 - WRITTEN:6
+
+Next Price is 0.09Selecting Records for price 0.09 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.09 - WRITTEN:7
+
+Next Price is 0.1Selecting Records for price 0.1 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.10 - WRITTEN:8
+
+Next Price is 0.11Selecting Records for price 0.11 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.11 - WRITTEN:9
+
+Next Price is 0.12Selecting Records for price 0.12 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.12 - WRITTEN:10
+
+Next Price is 0.13Selecting Records for price 0.13 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.13 - WRITTEN:11
+
+Next Price is 0.14Selecting Records for price 0.14 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.14 - WRITTEN:12
+
+Next Price is 0.15Selecting Records for price 0.15 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.15 - WRITTEN:13
+
+Next Price is 0.16Selecting Records for price 0.16 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.16 - WRITTEN:14
+
+Next Price is 0.17Selecting Records for price 0.17 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.17 - WRITTEN:15
+
+Next Price is 0.18Selecting Records for price 0.18 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.18 - WRITTEN:16
+
+Next Price is 0.19Selecting Records for price 0.19 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.19 - WRITTEN:17
+
+Next Price is 0.2Selecting Records for price 0.2 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.20 - WRITTEN:18
+
+Next Price is 0.21Selecting Records for price 0.21 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.21 - WRITTEN:19
+
+Next Price is 0.99Selecting Records for price 0.99 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        0.99 - SKIPPED
+           1 |                           good1 |          C1 |          S1 |        0.99 - SKIPPED
+
+Next Price is 1.5Selecting Records for price 1.5 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           6 |                           good6 |          C6 |          S6 |        1.50 - WRITTEN:20
+
+Next Price is 3.5Selecting Records for price 3.5 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                           good1 |          C1 |          S1 |        3.50 - SKIPPED
+
+Next Price is 3.8Selecting Records for price 3.8 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           3 |                           good3 |          C2 |          S2 |        3.80 - WRITTEN:21
+
+Next Price is 5.0Selecting Records for price 5.0 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           3 |                           good3 |          C3 |          S3 |        5.00 - WRITTEN:22
+
+Next Price is 5.5Selecting Records for price 5.5 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           7 |                           good7 |          C7 |          S7 |        5.50 - WRITTEN:23
+
+Next Price is 8.12Selecting Records for price 8.12 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           9 |                           good9 |          C9 |          S9 |        8.12 - WRITTEN:24
+          13 |                          good13 |         C13 |         S13 |        8.12 - WRITTEN:25
+           9 |                           good9 |          C9 |          S9 |       8.120 - WRITTEN:26
+          13 |                          good13 |         C13 |         S13 |        8.12 - WRITTEN:27
+
+Next Price is 8.5Selecting Records for price 8.5 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           2 |                           good2 |          C2 |          S2 |        8.50 - WRITTEN:28
+
+Next Price is 9.1Selecting Records for price 9.1 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           9 |                           good9 |          C8 |          S9 |        9.10 - WRITTEN:29
+           9 |                           good9 |          C8 |          S9 |       9.100 - WRITTEN:30
+
+Next Price is 9.3Selecting Records for price 9.3 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           2 |                           good2 |          C1 |          S2 |        9.30 - WRITTEN:31
+           2 |                           good2 |          C1 |          S2 |        9.30 - WRITTEN:32
+           2 |                           good2 |          C1 |          S2 |        9.30 - WRITTEN:33
+           2 |                           good2 |          C1 |          S2 |        9.30 - WRITTEN:34
+
+Next Price is 9.8Selecting Records for price 9.8 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           8 |                           good8 |          C8 |          S8 |        9.80 - WRITTEN:35
+           8 |                           good8 |          C8 |          S8 |        9.80 - WRITTEN:36
+
+Next Price is 10.0Selecting Records for price 10.0 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       18455 |              Historical fiction |         C33 |         S22 |        10.0 - WRITTEN:37
+        2109 |                           Fable |         C23 |         S86 |        10.0 - WRITTEN:38
+
+Next Price is 10.01Selecting Records for price 10.01 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+     6215967 |                         Mystery |         C04 |         S77 |       10.01 - WRITTEN:39
+         195 |                      Fairy tale |         C06 |         S07 |       10.01 - WRITTEN:40
+    69710074 |                      Mythopoeia |         C38 |         S20 |       10.01 - WRITTEN:41
+        7224 |                         Fantasy |         C66 |         S02 |       10.01 - WRITTEN:42
+   591276658 |               Fiction narrative |         C77 |         S22 |       10.01 - WRITTEN:43
+   431549822 |              Historical fiction |         C87 |         S81 |       10.01 - WRITTEN:44
+           2 |             Comic/Graphic Novel |         C03 |         S33 |       10.01 - WRITTEN:45
+           2 |                  Reference book |         C78 |         S71 |       10.01 - WRITTEN:46
+   872752105 |                 Science fiction |         C24 |         S49 |       10.01 - WRITTEN:47
+
+Next Price is 10.02Selecting Records for price 10.02 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       60734 |            Narrative nonfiction |         C54 |         S80 |       10.02 - WRITTEN:48
+     5099598 |                      Fairy tale |         C10 |         S67 |       10.02 - WRITTEN:49
+   803003777 |                          Speech |         C87 |         S53 |       10.02 - WRITTEN:50
+       27919 |                       Mythology |         C14 |         S94 |       10.02 - WRITTEN:51
+   288268127 |                         Mystery |         C11 |         S58 |       10.02 - WRITTEN:52
+   282262828 |                       Mythology |         C27 |         S62 |       10.02 - WRITTEN:53
+          13 |               Fiction narrative |         C61 |         S78 |       10.02 - WRITTEN:54
+     9864744 |                          Speech |         C28 |         S23 |       10.02 - WRITTEN:55
+         421 |               Suspense/Thriller |         C73 |         S76 |       10.02 - WRITTEN:56
+     6741791 |               Realistic fiction |         C78 |         S68 |       10.02 - WRITTEN:57
+       23219 |                           Fable |         C38 |         S83 |       10.02 - WRITTEN:58
+           0 |                      Mythopoeia |         C78 |         S50 |       10.02 - WRITTEN:59
+       72169 |                         Fantasy |         C98 |         S50 |       10.02 - WRITTEN:60
+
+Next Price is 10.03Selecting Records for price 10.03 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    44082106 |                         Mystery |         C40 |         S94 |       10.03 - WRITTEN:61
+           4 |                         Mystery |         C22 |         S67 |       10.03 - WRITTEN:62
+   582369659 |                          Speech |         C36 |         S62 |       10.03 - WRITTEN:63
+      430568 |                         Mystery |         C91 |         S67 |       10.03 - WRITTEN:64
+    99058583 |                 Crime/Detective |         C04 |         S16 |       10.03 - WRITTEN:65
+     3909487 |                  Reference book |         C45 |         S10 |       10.03 - WRITTEN:66
+       29356 |                           Fable |         C13 |         S08 |       10.03 - WRITTEN:67
+    13034252 |               Fiction narrative |         C87 |         S11 |       10.03 - WRITTEN:68
+          35 |                        Folklore |         C71 |         S62 |       10.03 - WRITTEN:69
+           9 |                      Fairy tale |         C51 |         S00 |       10.03 - WRITTEN:70
+
+Next Price is 10.04Selecting Records for price 10.04 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        6144 |                 Crime/Detective |         C43 |         S25 |       10.04 - WRITTEN:71
+    66894207 |                 Science fiction |         C23 |         S44 |       10.04 - WRITTEN:72
+         759 |              Historical fiction |         C11 |         S51 |       10.04 - WRITTEN:73
+           8 |                     Short story |         C68 |         S41 |       10.04 - WRITTEN:74
+           1 |             Comic/Graphic Novel |         C34 |         S91 |       10.04 - SKIPPED
+    92718943 |                           Fable |         C13 |         S86 |       10.04 - WRITTEN:75
+   253575087 |                     Metafiction |         C09 |         S04 |       10.04 - WRITTEN:76
+       61650 |                       Mythology |         C76 |         S83 |       10.04 - WRITTEN:77
+        6727 |                         Fantasy |         C72 |         S84 |       10.04 - WRITTEN:78
+
+Next Price is 10.05Selecting Records for price 10.05 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        5780 |                      Fanfiction |         C68 |         S98 |       10.05 - WRITTEN:79
+       91961 |                      Fairy tale |         C14 |         S69 |       10.05 - WRITTEN:80
+         806 |                       Mythology |         C69 |         S97 |       10.05 - WRITTEN:81
+     2883563 |                          Speech |         C10 |         S59 |       10.05 - WRITTEN:82
+          98 |                         Classic |         C85 |         S07 |       10.05 - WRITTEN:83
+          70 |                        Folklore |         C24 |         S67 |       10.05 - WRITTEN:84
+
+Next Price is 10.06Selecting Records for price 10.06 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    76253796 |                      Fanfiction |         C60 |         S85 |       10.06 - WRITTEN:85
+    44269081 |               Fiction narrative |         C62 |         S64 |       10.06 - WRITTEN:86
+         502 |            Narrative nonfiction |         C80 |         S13 |       10.06 - WRITTEN:87
+           0 |               Fiction narrative |         C94 |         S71 |       10.06 - WRITTEN:88
+   896744274 |                 Crime/Detective |         C25 |         S39 |       10.06 - WRITTEN:89
+       16878 |                        Textbook |         C01 |         S75 |       10.06 - WRITTEN:90
+           5 |                     Metafiction |         C10 |         S19 |       10.06 - WRITTEN:91
+   527562865 |                           Essay |         C54 |         S00 |       10.06 - WRITTEN:92
+     4362116 |                          Legend |         C33 |         S61 |       10.06 - WRITTEN:93
+        8950 |                           Essay |         C28 |         S42 |       10.06 - WRITTEN:94
+        8281 |                 Crime/Detective |         C72 |         S10 |       10.06 - WRITTEN:95
+           1 |                         Classic |         C71 |         S91 |       10.06 - SKIPPED
+           5 |                  Reference book |         C34 |         S56 |       10.06 - WRITTEN:96
+        3961 |                       Tall tale |         C88 |         S66 |       10.06 - WRITTEN:97
+        3705 |                 Science fiction |         C82 |         S41 |       10.06 - WRITTEN:98
+
+Next Price is 10.07Selecting Records for price 10.07 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    38600936 |                Fiction in verse |         C22 |         S81 |       10.07 - WRITTEN:99
+         346 |                        Folklore |         C11 |         S59 |       10.07 - WRITTEN:100
+   876713711 |                      Fanfiction |         C56 |         S45 |       10.07 - WRITTEN:101
+        1302 |                         Fantasy |         C82 |         S95 |       10.07 - WRITTEN:102
+    40916493 |                     Metafiction |         C46 |         S13 |       10.07 - WRITTEN:103
+   810259801 |         Biography/Autobiography |         C01 |         S63 |       10.07 - WRITTEN:104
+          30 |                 Science fiction |         C76 |         S76 |       10.07 - WRITTEN:105
+          45 |               Fiction narrative |         C70 |         S63 |       10.07 - WRITTEN:106
+       87254 |                     Metafiction |         C84 |         S15 |       10.07 - WRITTEN:107
+    41043130 |               Suspense/Thriller |         C38 |         S60 |       10.07 - WRITTEN:108
+
+Next Price is 10.08Selecting Records for price 10.08 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           3 |                          Horror |         C00 |         S86 |       10.08 - WRITTEN:109
+    95058982 |                 Crime/Detective |         C49 |         S66 |       10.08 - WRITTEN:110
+         544 |                       Mythology |         C57 |         S77 |       10.08 - WRITTEN:111
+           6 |                 Crime/Detective |         C30 |         S89 |       10.08 - WRITTEN:112
+      270726 |            Narrative nonfiction |         C27 |         S16 |       10.08 - WRITTEN:113
+
+Next Price is 10.09Selecting Records for price 10.09 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   176141679 |                       Mythology |         C64 |         S16 |       10.09 - WRITTEN:114
+          76 |                         Fantasy |         C17 |         S06 |       10.09 - WRITTEN:115
+     8374379 |                        Folklore |         C16 |         S33 |       10.09 - WRITTEN:116
+           1 |                       Tall tale |         C28 |         S17 |       10.09 - SKIPPED
+          39 |                           Humor |         C21 |         S32 |       10.09 - WRITTEN:117
+      486034 |             Comic/Graphic Novel |         C87 |         S82 |       10.09 - WRITTEN:118
+      985186 |                      Fairy tale |         C61 |         S56 |       10.09 - WRITTEN:119
+          42 |                 Crime/Detective |         C78 |         S49 |       10.09 - WRITTEN:120
+     3810000 |              Historical fiction |         C49 |         S24 |       10.09 - WRITTEN:121
+    81840266 |                           Humor |         C66 |         S00 |       10.09 - WRITTEN:122
+
+Next Price is 10.1Selecting Records for price 10.1 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    94636984 |         Biography/Autobiography |         C27 |         S07 |        10.1 - WRITTEN:123
+           4 |                  Reference book |         C41 |         S30 |        10.1 - WRITTEN:124
+           2 |                  Reference book |         C45 |         S23 |        10.1 - WRITTEN:125
+    83796661 |            Narrative nonfiction |         C60 |         S67 |        10.1 - WRITTEN:126
+        3665 |                 Science fiction |         C80 |         S41 |        10.1 - WRITTEN:127
+       83958 |                  Reference book |         C16 |         S30 |        10.1 - WRITTEN:128
+    36513944 |                        Textbook |         C80 |         S16 |        10.1 - WRITTEN:129
+        1314 |               Suspense/Thriller |         C04 |         S78 |        10.1 - WRITTEN:130
+        9478 |                      Fairy tale |         C82 |         S13 |        10.1 - WRITTEN:131
+      772053 |                         Fantasy |         C88 |         S05 |        10.1 - WRITTEN:132
+
+Next Price is 10.11Selecting Records for price 10.11 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           4 |         Biography/Autobiography |         C84 |         S85 |       10.11 - WRITTEN:133
+      853836 |                        Textbook |         C45 |         S07 |       10.11 - WRITTEN:134
+      715679 |         Biography/Autobiography |         C84 |         S03 |       10.11 - WRITTEN:135
+          32 |                           Essay |         C54 |         S57 |       10.11 - WRITTEN:136
+     3004270 |                 Science fiction |         C91 |         S84 |       10.11 - WRITTEN:137
+       63339 |                         Classic |         C58 |         S59 |       10.11 - WRITTEN:138
+       19392 |               Realistic fiction |         C56 |         S71 |       10.11 - WRITTEN:139
+           0 |         Biography/Autobiography |         C11 |         S69 |       10.11 - WRITTEN:140
+         404 |                        Textbook |         C92 |         S43 |       10.11 - WRITTEN:141
+       17672 |                     Short story |         C86 |         S10 |       10.11 - WRITTEN:142
+           0 |                      Fanfiction |         C77 |         S27 |       10.11 - WRITTEN:143
+     2092660 |                     Short story |         C34 |         S45 |       10.11 - WRITTEN:144
+    74196362 |               Fiction narrative |         C33 |         S82 |       10.11 - WRITTEN:145
+
+Next Price is 10.12Selecting Records for price 10.12 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          62 |                        Textbook |         C71 |         S24 |       10.12 - WRITTEN:146
+          94 |                     Metafiction |         C33 |         S20 |       10.12 - WRITTEN:147
+           5 |                 Crime/Detective |         C90 |         S48 |       10.12 - WRITTEN:148
+        1943 |                         Western |         C62 |         S24 |       10.12 - WRITTEN:149
+     4304323 |                     Short story |         C13 |         S42 |       10.12 - WRITTEN:150
+       72823 |         Biography/Autobiography |         C20 |         S25 |       10.12 - WRITTEN:151
+        3057 |                         Classic |         C30 |         S53 |       10.12 - WRITTEN:152
+   505178018 |                           Fable |         C13 |         S28 |       10.12 - WRITTEN:153
+           1 |                          Horror |         C44 |         S11 |       10.12 - SKIPPED
+       85163 |                          Legend |         C57 |         S65 |       10.12 - WRITTEN:154
+         776 |                      Fairy tale |         C21 |         S70 |       10.12 - WRITTEN:155
+
+Next Price is 10.13Selecting Records for price 10.13 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   452740663 |                           Fable |         C20 |         S08 |       10.13 - WRITTEN:156
+          36 |               Realistic fiction |         C08 |         S23 |       10.13 - WRITTEN:157
+          76 |                      Fanfiction |         C05 |         S25 |       10.13 - WRITTEN:158
+           0 |                         Fantasy |         C12 |         S21 |       10.13 - WRITTEN:159
+
+Next Price is 10.14Selecting Records for price 10.14 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        4535 |                Fiction in verse |         C13 |         S58 |       10.14 - WRITTEN:160
+      687671 |                        Textbook |         C74 |         S71 |       10.14 - WRITTEN:161
+    35534085 |                        Textbook |         C85 |         S19 |       10.14 - WRITTEN:162
+      746993 |               Suspense/Thriller |         C78 |         S33 |       10.14 - WRITTEN:163
+    93179565 |                      Fairy tale |         C07 |         S04 |       10.14 - WRITTEN:164
+     1102888 |                       Tall tale |         C88 |         S08 |       10.14 - WRITTEN:165
+     2538798 |               Fiction narrative |         C48 |         S62 |       10.14 - WRITTEN:166
+   765316323 |               Realistic fiction |         C17 |         S29 |       10.14 - WRITTEN:167
+         729 |               Fiction narrative |         C81 |         S58 |       10.14 - WRITTEN:168
+       91500 |               Realistic fiction |         C41 |         S36 |       10.14 - WRITTEN:169
+   339196711 |                           Humor |         C71 |         S12 |       10.14 - WRITTEN:170
+
+Next Price is 10.15Selecting Records for price 10.15 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      278871 |               Suspense/Thriller |         C57 |         S05 |       10.15 - WRITTEN:171
+          59 |             Comic/Graphic Novel |         C17 |         S21 |       10.15 - WRITTEN:172
+   269721333 |               Realistic fiction |         C77 |         S21 |       10.15 - WRITTEN:173
+     4191174 |                  Reference book |         C79 |         S83 |       10.15 - WRITTEN:174
+       99607 |                           Essay |         C86 |         S80 |       10.15 - WRITTEN:175
+    10678185 |                     Short story |         C55 |         S42 |       10.15 - WRITTEN:176
+   234942198 |                          Legend |         C17 |         S76 |       10.15 - WRITTEN:177
+           6 |               Fiction narrative |         C87 |         S75 |       10.15 - WRITTEN:178
+
+Next Price is 10.16Selecting Records for price 10.16 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        6430 |                      Fanfiction |         C21 |         S72 |       10.16 - WRITTEN:179
+          98 |                         Fantasy |         C30 |         S70 |       10.16 - WRITTEN:180
+           2 |                          Speech |         C96 |         S55 |       10.16 - WRITTEN:181
+     5331440 |         Biography/Autobiography |         C76 |         S00 |       10.16 - WRITTEN:182
+   937218505 |                      Fanfiction |         C46 |         S46 |       10.16 - WRITTEN:183
+       18634 |            Narrative nonfiction |         C43 |         S75 |       10.16 - WRITTEN:184
+      664233 |                           Essay |         C86 |         S45 |       10.16 - WRITTEN:185
+
+Next Price is 10.17Selecting Records for price 10.17 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        7929 |              Historical fiction |         C20 |         S25 |       10.17 - WRITTEN:186
+        6689 |               Realistic fiction |         C80 |         S61 |       10.17 - WRITTEN:187
+        3499 |                 Science fiction |         C32 |         S31 |       10.17 - WRITTEN:188
+          14 |               Suspense/Thriller |         C10 |         S31 |       10.17 - WRITTEN:189
+    64221812 |                        Folklore |         C62 |         S06 |       10.17 - WRITTEN:190
+       96809 |                      Mythopoeia |         C28 |         S85 |       10.17 - WRITTEN:191
+     7936569 |               Fiction narrative |         C83 |         S15 |       10.17 - WRITTEN:192
+           0 |                           Essay |         C87 |         S79 |       10.17 - WRITTEN:193
+          64 |                         Western |         C83 |         S13 |       10.17 - WRITTEN:194
+      388644 |                      Mythopoeia |         C73 |         S57 |       10.17 - WRITTEN:195
+         269 |             Comic/Graphic Novel |         C58 |         S30 |       10.17 - WRITTEN:196
+
+Next Price is 10.18Selecting Records for price 10.18 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      952420 |                     Metafiction |         C86 |         S32 |       10.18 - WRITTEN:197
+       91697 |              Historical fiction |         C99 |         S67 |       10.18 - WRITTEN:198
+          79 |         Biography/Autobiography |         C70 |         S44 |       10.18 - WRITTEN:199
+         256 |                          Legend |         C66 |         S14 |       10.18 - WRITTEN:200
+
+Next Price is 10.19Selecting Records for price 10.19 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      962750 |                  Reference book |         C56 |         S64 |       10.19 - WRITTEN:201
+   640814165 |                Fiction in verse |         C54 |         S51 |       10.19 - WRITTEN:202
+       41637 |              Historical fiction |         C84 |         S63 |       10.19 - WRITTEN:203
+         384 |               Realistic fiction |         C20 |         S80 |       10.19 - WRITTEN:204
+     4565741 |                         Western |         C33 |         S26 |       10.19 - WRITTEN:205
+           3 |                          Speech |         C54 |         S50 |       10.19 - WRITTEN:206
+    52819185 |                           Essay |         C12 |         S86 |       10.19 - WRITTEN:207
+   479715788 |               Fiction narrative |         C76 |         S17 |       10.19 - WRITTEN:208
+
+Next Price is 10.2Selecting Records for price 10.2 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       60916 |              Historical fiction |         C06 |         S27 |        10.2 - WRITTEN:209
+    59528875 |         Biography/Autobiography |         C66 |         S50 |        10.2 - WRITTEN:210
+    72015301 |         Biography/Autobiography |         C59 |         S13 |        10.2 - WRITTEN:211
+         813 |                       Mythology |         C21 |         S44 |        10.2 - WRITTEN:212
+     8203337 |                     Short story |         C06 |         S36 |        10.2 - WRITTEN:213
+      414072 |                  Reference book |         C02 |         S17 |        10.2 - WRITTEN:214
+   999164213 |                         Fantasy |         C25 |         S73 |        10.2 - WRITTEN:215
+         999 |                         Classic |         C74 |         S35 |        10.2 - WRITTEN:216
+         335 |                      Mythopoeia |         C88 |         S34 |        10.2 - WRITTEN:217
+   323783637 |                          Speech |         C50 |         S76 |        10.2 - WRITTEN:218
+
+Next Price is 10.21Selecting Records for price 10.21 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        9223 |                      Fairy tale |         C56 |         S36 |       10.21 - WRITTEN:219
+    31025286 |                           Humor |         C34 |         S34 |       10.21 - WRITTEN:220
+           3 |                Fiction in verse |         C48 |         S01 |       10.21 - WRITTEN:221
+          68 |               Realistic fiction |         C03 |         S54 |       10.21 - WRITTEN:222
+    10066229 |                          Horror |         C77 |         S28 |       10.21 - WRITTEN:223
+         119 |                     Metafiction |         C29 |         S45 |       10.21 - WRITTEN:224
+       95534 |                        Textbook |         C12 |         S44 |       10.21 - WRITTEN:225
+          39 |                           Fable |         C48 |         S64 |       10.21 - WRITTEN:226
+    99576015 |                       Tall tale |         C79 |         S14 |       10.21 - WRITTEN:227
+           5 |                       Mythology |         C00 |         S84 |       10.21 - WRITTEN:228
+      155200 |                           Humor |         C43 |         S88 |       10.21 - WRITTEN:229
+    52804896 |                       Tall tale |         C42 |         S40 |       10.21 - WRITTEN:230
+
+Next Price is 10.22Selecting Records for price 10.22 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+         149 |                Fiction in verse |         C40 |         S77 |       10.22 - WRITTEN:231
+          43 |                 Crime/Detective |         C28 |         S25 |       10.22 - WRITTEN:232
+           7 |                          Legend |         C78 |         S18 |       10.22 - WRITTEN:233
+        8835 |                         Fantasy |         C14 |         S17 |       10.22 - WRITTEN:234
+        6669 |                           Fable |         C03 |         S58 |       10.22 - WRITTEN:235
+        1998 |                      Fairy tale |         C81 |         S26 |       10.22 - WRITTEN:236
+          37 |                Fiction in verse |         C38 |         S47 |       10.22 - WRITTEN:237
+    32894455 |                           Humor |         C75 |         S58 |       10.22 - WRITTEN:238
+         310 |             Comic/Graphic Novel |         C61 |         S82 |       10.22 - WRITTEN:239
+      501991 |                        Folklore |         C44 |         S42 |       10.22 - WRITTEN:240
+
+Next Price is 10.23Selecting Records for price 10.23 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       13830 |               Realistic fiction |         C77 |         S68 |       10.23 - WRITTEN:241
+           7 |                          Speech |         C65 |         S46 |       10.23 - WRITTEN:242
+     3750968 |                           Humor |         C48 |         S05 |       10.23 - WRITTEN:243
+          54 |                          Speech |         C28 |         S76 |       10.23 - WRITTEN:244
+   707657214 |               Realistic fiction |         C83 |         S63 |       10.23 - WRITTEN:245
+        1483 |               Suspense/Thriller |         C40 |         S26 |       10.23 - WRITTEN:246
+           4 |                 Science fiction |         C38 |         S36 |       10.23 - WRITTEN:247
+        4785 |                          Horror |         C11 |         S11 |       10.23 - WRITTEN:248
+         501 |                Fiction in verse |         C87 |         S14 |       10.23 - WRITTEN:249
+          16 |                           Essay |         C01 |         S85 |       10.23 - WRITTEN:250
+
+Next Price is 10.24Selecting Records for price 10.24 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    74941197 |                          Speech |         C85 |         S46 |       10.24 - WRITTEN:251
+      437553 |                Fiction in verse |         C64 |         S66 |       10.24 - WRITTEN:252
+          90 |         Biography/Autobiography |         C93 |         S02 |       10.24 - WRITTEN:253
+       86252 |                         Mystery |         C58 |         S58 |       10.24 - WRITTEN:254
+    50204033 |                         Classic |         C67 |         S29 |       10.24 - WRITTEN:255
+     8802956 |                         Classic |         C57 |         S44 |       10.24 - WRITTEN:256
+   541593825 |                          Speech |         C08 |         S68 |       10.24 - WRITTEN:257
+      677924 |         Biography/Autobiography |         C37 |         S73 |       10.24 - WRITTEN:258
+    31928276 |            Narrative nonfiction |         C81 |         S45 |       10.24 - WRITTEN:259
+   108680194 |                         Mystery |         C63 |         S33 |       10.24 - WRITTEN:260
+         980 |                           Essay |         C27 |         S27 |       10.24 - WRITTEN:261
+   960856755 |               Realistic fiction |         C27 |         S99 |       10.24 - WRITTEN:262
+       84318 |                      Fairy tale |         C66 |         S03 |       10.24 - WRITTEN:263
+
+Next Price is 10.25Selecting Records for price 10.25 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           0 |                           Humor |         C02 |         S95 |       10.25 - WRITTEN:264
+      421346 |                         Mystery |         C54 |         S36 |       10.25 - WRITTEN:265
+   135726141 |                     Short story |         C72 |         S75 |       10.25 - WRITTEN:266
+      250898 |                         Classic |         C85 |         S39 |       10.25 - WRITTEN:267
+        6458 |                Fiction in verse |         C05 |         S41 |       10.25 - WRITTEN:268
+        4849 |                          Speech |         C59 |         S43 |       10.25 - WRITTEN:269
+        1271 |                         Fantasy |         C86 |         S15 |       10.25 - WRITTEN:270
+     4135288 |                         Western |         C54 |         S40 |       10.25 - WRITTEN:271
+
+Next Price is 10.26Selecting Records for price 10.26 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       35839 |                         Mystery |         C85 |         S76 |       10.26 - WRITTEN:272
+    64718567 |                 Crime/Detective |         C55 |         S41 |       10.26 - WRITTEN:273
+         319 |                           Fable |         C80 |         S34 |       10.26 - WRITTEN:274
+       48392 |                           Humor |         C56 |         S70 |       10.26 - WRITTEN:275
+        4342 |                         Mystery |         C07 |         S60 |       10.26 - WRITTEN:276
+          84 |               Suspense/Thriller |         C90 |         S16 |       10.26 - WRITTEN:277
+           3 |                         Fantasy |         C68 |         S31 |       10.26 - WRITTEN:278
+    35208684 |                  Reference book |         C11 |         S71 |       10.26 - WRITTEN:279
+   704964739 |             Comic/Graphic Novel |         C70 |         S02 |       10.26 - WRITTEN:280
+           8 |                        Folklore |         C50 |         S45 |       10.26 - WRITTEN:281
+      270407 |              Historical fiction |         C62 |         S52 |       10.26 - WRITTEN:282
+
+Next Price is 10.27Selecting Records for price 10.27 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+     3846769 |                Fiction in verse |         C71 |         S34 |       10.27 - WRITTEN:283
+          67 |                           Essay |         C45 |         S41 |       10.27 - WRITTEN:284
+          47 |               Fiction narrative |         C69 |         S74 |       10.27 - WRITTEN:285
+      831146 |                Fiction in verse |         C21 |         S04 |       10.27 - WRITTEN:286
+           6 |                       Tall tale |         C65 |         S09 |       10.27 - WRITTEN:287
+          61 |                      Mythopoeia |         C44 |         S33 |       10.27 - WRITTEN:288
+   269143344 |                        Folklore |         C42 |         S48 |       10.27 - WRITTEN:289
+          67 |                 Crime/Detective |         C43 |         S17 |       10.27 - WRITTEN:290
+        4533 |                      Fanfiction |         C35 |         S81 |       10.27 - WRITTEN:291
+      563316 |                       Tall tale |         C30 |         S70 |       10.27 - WRITTEN:292
+        5545 |                      Fairy tale |         C38 |         S46 |       10.27 - WRITTEN:293
+      830636 |                          Legend |         C60 |         S10 |       10.27 - WRITTEN:294
+       40936 |                          Legend |         C31 |         S17 |       10.27 - WRITTEN:295
+      407843 |               Suspense/Thriller |         C66 |         S76 |       10.27 - WRITTEN:296
+       39973 |                       Tall tale |         C70 |         S71 |       10.27 - WRITTEN:297
+         796 |                 Science fiction |         C14 |         S81 |       10.27 - WRITTEN:298
+
+Next Price is 10.28Selecting Records for price 10.28 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+         205 |                 Crime/Detective |         C00 |         S32 |       10.28 - WRITTEN:299
+     2548747 |               Suspense/Thriller |         C37 |         S25 |       10.28 - WRITTEN:300
+      683484 |                  Reference book |         C48 |         S44 |       10.28 - WRITTEN:301
+         406 |                         Fantasy |         C71 |         S63 |       10.28 - WRITTEN:302
+   622084683 |                        Textbook |         C67 |         S47 |       10.28 - WRITTEN:303
+     7192250 |                      Mythopoeia |         C54 |         S92 |       10.28 - WRITTEN:304
+         957 |                       Tall tale |         C54 |         S34 |       10.28 - WRITTEN:305
+
+Next Price is 10.29Selecting Records for price 10.29 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   340552321 |                         Classic |         C21 |         S10 |       10.29 - WRITTEN:306
+     3125216 |                         Classic |         C89 |         S87 |       10.29 - WRITTEN:307
+       29982 |               Realistic fiction |         C16 |         S82 |       10.29 - WRITTEN:308
+          85 |                 Science fiction |         C31 |         S87 |       10.29 - WRITTEN:309
+     9615514 |                      Fairy tale |         C28 |         S05 |       10.29 - WRITTEN:310
+           6 |                          Legend |         C23 |         S82 |       10.29 - WRITTEN:311
+           2 |            Narrative nonfiction |         C42 |         S50 |       10.29 - WRITTEN:312
+           1 |                         Western |         C43 |         S07 |       10.29 - SKIPPED
+      664680 |                           Fable |         C77 |         S86 |       10.29 - WRITTEN:313
+           6 |                       Tall tale |         C33 |         S47 |       10.29 - WRITTEN:314
+          89 |                         Classic |         C17 |         S51 |       10.29 - WRITTEN:315
+      650791 |                           Essay |         C37 |         S28 |       10.29 - WRITTEN:316
+       27422 |                     Metafiction |         C61 |         S20 |       10.29 - WRITTEN:317
+
+Next Price is 10.3Selecting Records for price 10.3 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       70355 |                         Mystery |         C30 |         S39 |        10.3 - WRITTEN:318
+   967776848 |                           Essay |         C55 |         S17 |        10.3 - WRITTEN:319
+          60 |                          Legend |         C76 |         S37 |        10.3 - WRITTEN:320
+          85 |                     Metafiction |         C56 |         S87 |        10.3 - WRITTEN:321
+       98840 |                       Mythology |         C54 |         S17 |        10.3 - WRITTEN:322
+           1 |              Historical fiction |         C24 |         S44 |        10.3 - SKIPPED
+          54 |               Suspense/Thriller |         C87 |         S03 |        10.3 - WRITTEN:323
+         356 |                       Mythology |         C47 |         S61 |        10.3 - WRITTEN:324
+   303041925 |                         Fantasy |         C51 |         S13 |        10.3 - WRITTEN:325
+        9901 |               Suspense/Thriller |         C51 |         S36 |        10.3 - WRITTEN:326
+
+Next Price is 10.31Selecting Records for price 10.31 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    27008870 |             Comic/Graphic Novel |         C84 |         S30 |       10.31 - WRITTEN:327
+         192 |                      Fairy tale |         C16 |         S55 |       10.31 - WRITTEN:328
+           2 |             Comic/Graphic Novel |         C23 |         S42 |       10.31 - WRITTEN:329
+        5561 |               Suspense/Thriller |         C76 |         S46 |       10.31 - WRITTEN:330
+       55614 |                           Humor |         C61 |         S71 |       10.31 - WRITTEN:331
+           3 |                     Metafiction |         C69 |         S18 |       10.31 - WRITTEN:332
+   821836446 |         Biography/Autobiography |         C28 |         S53 |       10.31 - WRITTEN:333
+          29 |                         Fantasy |         C78 |         S87 |       10.31 - WRITTEN:334
+   597100361 |                     Short story |         C75 |         S81 |       10.31 - WRITTEN:335
+       51367 |                Fiction in verse |         C64 |         S40 |       10.31 - WRITTEN:336
+          29 |                Fiction in verse |         C52 |         S87 |       10.31 - WRITTEN:337
+    91511341 |                      Mythopoeia |         C39 |         S81 |       10.31 - WRITTEN:338
+       21599 |              Historical fiction |         C80 |         S44 |       10.31 - WRITTEN:339
+     7400852 |            Narrative nonfiction |         C11 |         S37 |       10.31 - WRITTEN:340
+       58184 |                     Short story |         C47 |         S52 |       10.31 - WRITTEN:341
+
+Next Price is 10.32Selecting Records for price 10.32 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   864357140 |                Fiction in verse |         C40 |         S17 |       10.32 - WRITTEN:342
+     2363779 |                           Humor |         C45 |         S29 |       10.32 - WRITTEN:343
+       21461 |                           Humor |         C87 |         S88 |       10.32 - WRITTEN:344
+           1 |               Realistic fiction |         C87 |         S54 |       10.32 - SKIPPED
+    77303166 |            Narrative nonfiction |         C99 |         S67 |       10.32 - WRITTEN:345
+          23 |            Narrative nonfiction |         C05 |         S72 |       10.32 - WRITTEN:346
+   990606175 |                 Science fiction |         C96 |         S84 |       10.32 - WRITTEN:347
+
+Next Price is 10.33Selecting Records for price 10.33 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           6 |                 Science fiction |         C63 |         S17 |       10.33 - WRITTEN:348
+      254142 |               Fiction narrative |         C13 |         S76 |       10.33 - WRITTEN:349
+   505688101 |                       Tall tale |         C61 |         S53 |       10.33 - WRITTEN:350
+    49588386 |                      Fanfiction |         C51 |         S25 |       10.33 - WRITTEN:351
+      803172 |                       Mythology |         C28 |         S11 |       10.33 - WRITTEN:352
+     6542957 |                          Speech |         C28 |         S25 |       10.33 - WRITTEN:353
+        7594 |                         Western |         C12 |         S26 |       10.33 - WRITTEN:354
+          75 |                       Tall tale |         C89 |         S59 |       10.33 - WRITTEN:355
+    35556395 |                         Classic |         C08 |         S62 |       10.33 - WRITTEN:356
+       33253 |                         Fantasy |         C74 |         S96 |       10.33 - WRITTEN:357
+   743131069 |                         Western |         C26 |         S32 |       10.33 - WRITTEN:358
+         561 |               Suspense/Thriller |         C43 |         S85 |       10.33 - WRITTEN:359
+   531831426 |                          Horror |         C93 |         S16 |       10.33 - WRITTEN:360
+       57514 |                        Textbook |         C22 |         S04 |       10.33 - WRITTEN:361
+
+Next Price is 10.34Selecting Records for price 10.34 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           5 |                          Horror |         C28 |         S63 |       10.34 - WRITTEN:362
+        1996 |                 Science fiction |         C43 |         S77 |       10.34 - WRITTEN:363
+       35534 |                Fiction in verse |         C97 |         S38 |       10.34 - WRITTEN:364
+          85 |              Historical fiction |         C48 |         S33 |       10.34 - WRITTEN:365
+      671855 |                      Mythopoeia |         C78 |         S31 |       10.34 - WRITTEN:366
+   471184009 |         Biography/Autobiography |         C78 |         S87 |       10.34 - WRITTEN:367
+
+Next Price is 10.35Selecting Records for price 10.35 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    26052535 |                  Reference book |         C43 |         S72 |       10.35 - WRITTEN:368
+       78764 |             Comic/Graphic Novel |         C34 |         S47 |       10.35 - WRITTEN:369
+         212 |                 Science fiction |         C45 |         S14 |       10.35 - WRITTEN:370
+           5 |                         Mystery |         C20 |         S03 |       10.35 - WRITTEN:371
+      124128 |                     Metafiction |         C01 |         S30 |       10.35 - WRITTEN:372
+          35 |                         Western |         C46 |         S35 |       10.35 - WRITTEN:373
+   187110932 |                          Horror |         C88 |         S26 |       10.35 - WRITTEN:374
+          12 |                          Horror |         C68 |         S47 |       10.35 - WRITTEN:375
+        2639 |                 Crime/Detective |         C77 |         S01 |       10.35 - WRITTEN:376
+
+Next Price is 10.36Selecting Records for price 10.36 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       60186 |                     Short story |         C73 |         S02 |       10.36 - WRITTEN:377
+   823189153 |                           Humor |         C22 |         S14 |       10.36 - WRITTEN:378
+    99080443 |               Fiction narrative |         C43 |         S51 |       10.36 - WRITTEN:379
+          11 |            Narrative nonfiction |         C86 |         S03 |       10.36 - WRITTEN:380
+        2188 |              Historical fiction |         C74 |         S12 |       10.36 - WRITTEN:381
+       58811 |                      Fanfiction |         C84 |         S59 |       10.36 - WRITTEN:382
+
+Next Price is 10.37Selecting Records for price 10.37 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        9578 |                      Mythopoeia |         C45 |         S04 |       10.37 - WRITTEN:383
+   972314815 |               Fiction narrative |         C50 |         S31 |       10.37 - WRITTEN:384
+          19 |                           Humor |         C94 |         S67 |       10.37 - WRITTEN:385
+    32932309 |                Fiction in verse |         C03 |         S52 |       10.37 - WRITTEN:386
+
+Next Price is 10.38Selecting Records for price 10.38 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       10586 |                      Mythopoeia |         C65 |         S57 |       10.38 - WRITTEN:387
+    39433120 |                           Humor |         C94 |         S63 |       10.38 - WRITTEN:388
+    65599853 |               Fiction narrative |         C08 |         S27 |       10.38 - WRITTEN:389
+      221234 |                     Metafiction |         C53 |         S88 |       10.38 - WRITTEN:390
+
+Next Price is 10.39Selecting Records for price 10.39 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   278047271 |                         Western |         C02 |         S58 |       10.39 - WRITTEN:391
+           6 |                         Mystery |         C03 |         S12 |       10.39 - WRITTEN:392
+         319 |                          Horror |         C42 |         S04 |       10.39 - WRITTEN:393
+      970746 |                           Fable |         C21 |         S43 |       10.39 - WRITTEN:394
+          53 |         Biography/Autobiography |         C28 |         S16 |       10.39 - WRITTEN:395
+      576691 |         Biography/Autobiography |         C06 |         S66 |       10.39 - WRITTEN:396
+          95 |                          Speech |         C65 |         S67 |       10.39 - WRITTEN:397
+     7602830 |                        Folklore |         C21 |         S67 |       10.39 - WRITTEN:398
+    63281144 |                  Reference book |         C29 |         S76 |       10.39 - WRITTEN:399
+
+Next Price is 10.4Selecting Records for price 10.4 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    98416308 |                 Science fiction |         C18 |         S21 |        10.4 - WRITTEN:400
+         667 |                       Tall tale |         C81 |         S51 |        10.4 - WRITTEN:401
+          51 |             Comic/Graphic Novel |         C46 |         S03 |        10.4 - WRITTEN:402
+        8708 |                  Reference book |         C05 |         S43 |        10.4 - WRITTEN:403
+      117803 |               Realistic fiction |         C73 |         S36 |        10.4 - WRITTEN:404
+    87040697 |                       Tall tale |         C73 |         S21 |        10.4 - WRITTEN:405
+          40 |              Historical fiction |         C24 |         S17 |        10.4 - WRITTEN:406
+     1417971 |                 Science fiction |         C49 |         S06 |        10.4 - WRITTEN:407
+   198919849 |                      Fairy tale |         C44 |         S94 |        10.4 - WRITTEN:408
+           8 |                         Fantasy |         C33 |         S15 |        10.4 - WRITTEN:409
+     3997573 |                 Crime/Detective |         C50 |         S23 |        10.4 - WRITTEN:410
+      318632 |                       Mythology |         C92 |         S85 |        10.4 - WRITTEN:411
+        9316 |                        Textbook |         C24 |         S86 |        10.4 - WRITTEN:412
+
+Next Price is 10.41Selecting Records for price 10.41 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           4 |         Biography/Autobiography |         C65 |         S42 |       10.41 - WRITTEN:413
+        2943 |               Fiction narrative |         C58 |         S36 |       10.41 - WRITTEN:414
+      466993 |         Biography/Autobiography |         C04 |         S48 |       10.41 - WRITTEN:415
+         510 |                 Crime/Detective |         C24 |         S47 |       10.41 - WRITTEN:416
+         812 |                          Speech |         C43 |         S48 |       10.41 - WRITTEN:417
+     1868311 |            Narrative nonfiction |         C60 |         S77 |       10.41 - WRITTEN:418
+          16 |                     Short story |         C94 |         S94 |       10.41 - WRITTEN:419
+        7240 |                      Fanfiction |         C25 |         S84 |       10.41 - WRITTEN:420
+          62 |            Narrative nonfiction |         C66 |         S50 |       10.41 - WRITTEN:421
+      351418 |                         Fantasy |         C81 |         S44 |       10.41 - WRITTEN:422
+     5549495 |                Fiction in verse |         C05 |         S31 |       10.41 - WRITTEN:423
+          57 |                           Essay |         C82 |         S44 |       10.41 - WRITTEN:424
+          76 |                          Legend |         C28 |         S56 |       10.41 - WRITTEN:425
+           7 |                         Western |         C20 |         S68 |       10.41 - WRITTEN:426
+       34012 |                 Crime/Detective |         C94 |         S24 |       10.41 - WRITTEN:427
+
+Next Price is 10.42Selecting Records for price 10.42 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+     7986379 |              Historical fiction |         C10 |         S62 |       10.42 - WRITTEN:428
+   522631560 |                         Classic |         C71 |         S87 |       10.42 - WRITTEN:429
+         562 |                          Legend |         C35 |         S68 |       10.42 - WRITTEN:430
+   707823710 |                         Western |         C34 |         S71 |       10.42 - WRITTEN:431
+   333142315 |               Suspense/Thriller |         C64 |         S52 |       10.42 - WRITTEN:432
+          18 |                         Classic |         C12 |         S40 |       10.42 - WRITTEN:433
+          32 |                           Fable |         C52 |         S97 |       10.42 - WRITTEN:434
+        1790 |                         Classic |         C36 |         S85 |       10.42 - WRITTEN:435
+    63318004 |                         Mystery |         C03 |         S09 |       10.42 - WRITTEN:436
+         180 |               Realistic fiction |         C46 |         S02 |       10.42 - WRITTEN:437
+      348030 |               Realistic fiction |         C80 |         S13 |       10.42 - WRITTEN:438
+
+Next Price is 10.43Selecting Records for price 10.43 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          35 |                          Legend |         C15 |         S78 |       10.43 - WRITTEN:439
+      736655 |            Narrative nonfiction |         C96 |         S20 |       10.43 - WRITTEN:440
+         113 |                 Science fiction |         C03 |         S34 |       10.43 - WRITTEN:441
+           0 |              Historical fiction |         C77 |         S72 |       10.43 - WRITTEN:442
+     9899316 |            Narrative nonfiction |         C52 |         S68 |       10.43 - WRITTEN:443
+           3 |             Comic/Graphic Novel |         C14 |         S58 |       10.43 - WRITTEN:444
+    52753280 |                          Horror |         C14 |         S34 |       10.43 - WRITTEN:445
+     8405092 |                     Short story |         C62 |         S25 |       10.43 - WRITTEN:446
+     9317033 |               Realistic fiction |         C96 |         S28 |       10.43 - WRITTEN:447
+       17271 |                       Mythology |         C37 |         S18 |       10.43 - WRITTEN:448
+         296 |                Fiction in verse |         C52 |         S43 |       10.43 - WRITTEN:449
+
+Next Price is 10.44Selecting Records for price 10.44 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+         457 |                          Horror |         C54 |         S18 |       10.44 - WRITTEN:450
+       48915 |            Narrative nonfiction |         C33 |         S60 |       10.44 - WRITTEN:451
+     1793539 |                        Textbook |         C47 |         S08 |       10.44 - WRITTEN:452
+          70 |                      Mythopoeia |         C67 |         S55 |       10.44 - WRITTEN:453
+    64197434 |               Realistic fiction |         C92 |         S32 |       10.44 - WRITTEN:454
+           5 |                           Essay |         C44 |         S71 |       10.44 - WRITTEN:455
+          76 |                      Fanfiction |         C05 |         S32 |       10.44 - WRITTEN:456
+    11272011 |                  Reference book |         C13 |         S02 |       10.44 - WRITTEN:457
+
+Next Price is 10.45Selecting Records for price 10.45 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           1 |                      Fanfiction |         C54 |         S14 |       10.45 - SKIPPED
+    90109234 |                  Reference book |         C11 |         S87 |       10.45 - WRITTEN:458
+    50084059 |                     Metafiction |         C46 |         S01 |       10.45 - WRITTEN:459
+     2877524 |                      Mythopoeia |         C70 |         S31 |       10.45 - WRITTEN:460
+         952 |         Biography/Autobiography |         C34 |         S67 |       10.45 - WRITTEN:461
+      843599 |         Biography/Autobiography |         C70 |         S17 |       10.45 - WRITTEN:462
+          13 |                         Classic |         C98 |         S42 |       10.45 - WRITTEN:463
+         546 |            Narrative nonfiction |         C88 |         S56 |       10.45 - WRITTEN:464
+   941076725 |            Narrative nonfiction |         C02 |         S83 |       10.45 - WRITTEN:465
+    27923046 |                           Fable |         C07 |         S53 |       10.45 - WRITTEN:466
+          44 |                Fiction in verse |         C88 |         S18 |       10.45 - WRITTEN:467
+        8425 |                         Classic |         C20 |         S45 |       10.45 - WRITTEN:468
+        7374 |                         Mystery |         C74 |         S10 |       10.45 - WRITTEN:469
+         160 |                      Mythopoeia |         C24 |         S22 |       10.45 - WRITTEN:470
+         313 |                     Metafiction |         C00 |         S77 |       10.45 - WRITTEN:471
+    62061037 |                 Science fiction |         C21 |         S95 |       10.45 - WRITTEN:472
+
+Next Price is 10.46Selecting Records for price 10.46 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    76639110 |                         Classic |         C95 |         S74 |       10.46 - WRITTEN:473
+          20 |               Fiction narrative |         C78 |         S63 |       10.46 - WRITTEN:474
+      841868 |              Historical fiction |         C89 |         S65 |       10.46 - WRITTEN:475
+         288 |                          Speech |         C33 |         S77 |       10.46 - WRITTEN:476
+           8 |                          Legend |         C45 |         S63 |       10.46 - WRITTEN:477
+      540974 |                           Fable |         C14 |         S00 |       10.46 - WRITTEN:478
+          51 |                           Essay |         C27 |         S88 |       10.46 - WRITTEN:479
+         766 |                          Speech |         C42 |         S57 |       10.46 - WRITTEN:480
+       40563 |               Fiction narrative |         C70 |         S27 |       10.46 - WRITTEN:481
+     3209319 |                          Horror |         C53 |         S98 |       10.46 - WRITTEN:482
+    25215763 |               Fiction narrative |         C53 |         S94 |       10.46 - WRITTEN:483
+      645787 |                         Western |         C25 |         S85 |       10.46 - WRITTEN:484
+
+Next Price is 10.47Selecting Records for price 10.47 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    94188519 |                     Short story |         C45 |         S36 |       10.47 - WRITTEN:485
+           1 |                      Fanfiction |         C88 |         S33 |       10.47 - SKIPPED
+        4543 |                          Speech |         C45 |         S20 |       10.47 - WRITTEN:486
+     9689569 |                Fiction in verse |         C14 |         S01 |       10.47 - WRITTEN:487
+     3747670 |               Realistic fiction |         C67 |         S42 |       10.47 - WRITTEN:488
+          97 |                         Classic |         C20 |         S95 |       10.47 - WRITTEN:489
+       55487 |               Fiction narrative |         C53 |         S17 |       10.47 - WRITTEN:490
+           6 |                        Textbook |         C11 |         S70 |       10.47 - WRITTEN:491
+       26460 |                      Fairy tale |         C31 |         S60 |       10.47 - WRITTEN:492
+       80048 |                        Textbook |         C35 |         S07 |       10.47 - WRITTEN:493
+
+Next Price is 10.48Selecting Records for price 10.48 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           8 |                          Speech |         C13 |         S59 |       10.48 - WRITTEN:494
+         592 |               Fiction narrative |         C03 |         S39 |       10.48 - WRITTEN:495
+        6079 |         Biography/Autobiography |         C64 |         S27 |       10.48 - WRITTEN:496
+         210 |                          Horror |         C34 |         S31 |       10.48 - WRITTEN:497
+           5 |                          Horror |         C75 |         S84 |       10.48 - WRITTEN:498
+      566603 |                  Reference book |         C28 |         S96 |       10.48 - WRITTEN:499
+
+Next Price is 10.49Selecting Records for price 10.49 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          95 |               Suspense/Thriller |         C77 |         S73 |       10.49 - WRITTEN:500
+           1 |                     Metafiction |         C85 |         S70 |       10.49 - SKIPPED
+           4 |         Biography/Autobiography |         C10 |         S60 |       10.49 - WRITTEN:501
+         490 |         Biography/Autobiography |         C48 |         S31 |       10.49 - WRITTEN:502
+         184 |                     Metafiction |         C75 |         S80 |       10.49 - WRITTEN:503
+      645460 |                         Classic |         C86 |         S78 |       10.49 - WRITTEN:504
+           3 |            Narrative nonfiction |         C03 |         S38 |       10.49 - WRITTEN:505
+
+Next Price is 10.5Selecting Records for price 10.5 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    84129533 |                 Crime/Detective |         C52 |         S30 |        10.5 - WRITTEN:506
+   300942697 |                           Fable |         C41 |         S84 |        10.5 - WRITTEN:507
+          76 |               Suspense/Thriller |         C67 |         S66 |        10.5 - WRITTEN:508
+         620 |                        Textbook |         C48 |         S25 |        10.5 - WRITTEN:509
+           4 |                     Metafiction |         C11 |         S30 |        10.5 - WRITTEN:510
+          63 |                     Metafiction |         C02 |         S71 |        10.5 - WRITTEN:511
+
+Next Price is 10.51Selecting Records for price 10.51 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          69 |                         Fantasy |         C45 |         S35 |       10.51 - WRITTEN:512
+           7 |                       Mythology |         C97 |         S26 |       10.51 - WRITTEN:513
+           0 |                          Speech |         C81 |         S73 |       10.51 - WRITTEN:514
+       88277 |                       Tall tale |         C16 |         S65 |       10.51 - WRITTEN:515
+     8740358 |               Realistic fiction |         C87 |         S64 |       10.51 - WRITTEN:516
+         179 |                      Fanfiction |         C77 |         S56 |       10.51 - WRITTEN:517
+           2 |                           Essay |         C83 |         S04 |       10.51 - WRITTEN:518
+
+Next Price is 10.52Selecting Records for price 10.52 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   754309527 |                          Horror |         C14 |         S70 |       10.52 - WRITTEN:519
+   575673341 |                         Fantasy |         C65 |         S94 |       10.52 - WRITTEN:520
+        9195 |                     Metafiction |         C39 |         S73 |       10.52 - WRITTEN:521
+       65646 |                         Fantasy |         C36 |         S48 |       10.52 - WRITTEN:522
+      933075 |                Fiction in verse |         C87 |         S32 |       10.52 - WRITTEN:523
+           0 |                     Metafiction |         C83 |         S38 |       10.52 - WRITTEN:524
+     8320774 |               Fiction narrative |         C60 |         S30 |       10.52 - WRITTEN:525
+      234974 |               Suspense/Thriller |         C50 |         S98 |       10.52 - WRITTEN:526
+           2 |                      Fanfiction |         C18 |         S81 |       10.52 - WRITTEN:527
+
+Next Price is 10.53Selecting Records for price 10.53 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           2 |                Fiction in verse |         C27 |         S27 |       10.53 - WRITTEN:528
+   183510812 |             Comic/Graphic Novel |         C21 |         S22 |       10.53 - WRITTEN:529
+           9 |                         Fantasy |         C77 |         S09 |       10.53 - WRITTEN:530
+   180303282 |               Realistic fiction |         C41 |         S84 |       10.53 - WRITTEN:531
+       75269 |                        Textbook |         C08 |         S68 |       10.53 - WRITTEN:532
+      739002 |                     Short story |         C61 |         S66 |       10.53 - WRITTEN:533
+     8128909 |                       Tall tale |         C69 |         S91 |       10.53 - WRITTEN:534
+          84 |               Realistic fiction |         C24 |         S30 |       10.53 - WRITTEN:535
+
+Next Price is 10.54Selecting Records for price 10.54 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    94196997 |                     Short story |         C44 |         S23 |       10.54 - WRITTEN:536
+       63378 |                          Legend |         C00 |         S60 |       10.54 - WRITTEN:537
+        5909 |                       Mythology |         C06 |         S51 |       10.54 - WRITTEN:538
+          34 |                      Fanfiction |         C14 |         S38 |       10.54 - WRITTEN:539
+
+Next Price is 10.55Selecting Records for price 10.55 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        1339 |                        Textbook |         C31 |         S83 |       10.55 - WRITTEN:540
+    54692556 |                     Metafiction |         C82 |         S00 |       10.55 - WRITTEN:541
+    69264591 |                       Tall tale |         C38 |         S15 |       10.55 - WRITTEN:542
+     1881228 |                       Mythology |         C00 |         S85 |       10.55 - WRITTEN:543
+     5657831 |                          Horror |         C01 |         S33 |       10.55 - WRITTEN:544
+
+Next Price is 10.56Selecting Records for price 10.56 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+     3313404 |                        Textbook |         C20 |         S24 |       10.56 - WRITTEN:545
+        8178 |                        Textbook |         C07 |         S65 |       10.56 - WRITTEN:546
+         649 |            Narrative nonfiction |         C72 |         S16 |       10.56 - WRITTEN:547
+       47896 |                         Western |         C28 |         S84 |       10.56 - WRITTEN:548
+     1980243 |                           Essay |         C19 |         S86 |       10.56 - WRITTEN:549
+      153900 |               Fiction narrative |         C08 |         S83 |       10.56 - WRITTEN:550
+    67848556 |                         Fantasy |         C84 |         S88 |       10.56 - WRITTEN:551
+          90 |                  Reference book |         C48 |         S51 |       10.56 - WRITTEN:552
+        3250 |         Biography/Autobiography |         C31 |         S33 |       10.56 - WRITTEN:553
+    15388129 |                      Fairy tale |         C84 |         S32 |       10.56 - WRITTEN:554
+    91407349 |              Historical fiction |         C58 |         S28 |       10.56 - WRITTEN:555
+   657875805 |              Historical fiction |         C26 |         S12 |       10.56 - WRITTEN:556
+       51444 |               Fiction narrative |         C65 |         S50 |       10.56 - WRITTEN:557
+   395630807 |                        Folklore |         C11 |         S23 |       10.56 - WRITTEN:558
+
+Next Price is 10.57Selecting Records for price 10.57 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    42435857 |                 Science fiction |         C07 |         S20 |       10.57 - WRITTEN:559
+    11842169 |                      Fairy tale |         C85 |         S09 |       10.57 - WRITTEN:560
+     6715963 |                      Fairy tale |         C52 |         S44 |       10.57 - WRITTEN:561
+        2971 |                     Short story |         C76 |         S12 |       10.57 - WRITTEN:562
+
+Next Price is 10.58Selecting Records for price 10.58 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      558116 |                 Crime/Detective |         C60 |         S02 |       10.58 - WRITTEN:563
+       88049 |                          Legend |         C79 |         S00 |       10.58 - WRITTEN:564
+          78 |                  Reference book |         C67 |         S26 |       10.58 - WRITTEN:565
+      311257 |         Biography/Autobiography |         C85 |         S86 |       10.58 - WRITTEN:566
+          11 |                           Humor |         C26 |         S21 |       10.58 - WRITTEN:567
+           6 |                        Textbook |         C78 |         S00 |       10.58 - WRITTEN:568
+        2651 |            Narrative nonfiction |         C32 |         S15 |       10.58 - WRITTEN:569
+       80645 |                          Speech |         C27 |         S82 |       10.58 - WRITTEN:570
+       49083 |                       Mythology |         C53 |         S88 |       10.58 - WRITTEN:571
+         623 |                          Legend |         C27 |         S71 |       10.58 - WRITTEN:572
+    20183032 |         Biography/Autobiography |         C68 |         S67 |       10.58 - WRITTEN:573
+           5 |         Biography/Autobiography |         C82 |         S13 |       10.58 - WRITTEN:574
+    54416044 |                 Crime/Detective |         C57 |         S25 |       10.58 - WRITTEN:575
+
+Next Price is 10.59Selecting Records for price 10.59 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   577433485 |                           Humor |         C89 |         S72 |       10.59 - WRITTEN:576
+      272458 |                        Folklore |         C20 |         S54 |       10.59 - WRITTEN:577
+       87947 |                       Tall tale |         C48 |         S43 |       10.59 - WRITTEN:578
+      944819 |                      Mythopoeia |         C28 |         S23 |       10.59 - WRITTEN:579
+         798 |                          Speech |         C30 |         S08 |       10.59 - WRITTEN:580
+           2 |                Fiction in verse |         C47 |         S67 |       10.59 - WRITTEN:581
+
+Next Price is 10.6Selecting Records for price 10.6 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          59 |                         Western |         C07 |         S87 |        10.6 - WRITTEN:582
+      948381 |                           Fable |         C28 |         S61 |        10.6 - WRITTEN:583
+          62 |                        Folklore |         C90 |         S77 |        10.6 - WRITTEN:584
+           5 |                         Fantasy |         C02 |         S48 |        10.6 - WRITTEN:585
+    94792042 |             Comic/Graphic Novel |         C23 |         S92 |        10.6 - WRITTEN:586
+          72 |         Biography/Autobiography |         C80 |         S18 |        10.6 - WRITTEN:587
+        3100 |                        Textbook |         C68 |         S92 |        10.6 - WRITTEN:588
+      232278 |            Narrative nonfiction |         C48 |         S20 |        10.6 - WRITTEN:589
+     1482642 |             Comic/Graphic Novel |         C25 |         S41 |        10.6 - WRITTEN:590
+    22941246 |              Historical fiction |         C98 |         S87 |        10.6 - WRITTEN:591
+       38156 |               Realistic fiction |         C90 |         S46 |        10.6 - WRITTEN:592
+
+Next Price is 10.61Selecting Records for price 10.61 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          14 |                  Reference book |         C69 |         S57 |       10.61 - WRITTEN:593
+   739079750 |             Comic/Graphic Novel |         C88 |         S65 |       10.61 - WRITTEN:594
+     5461294 |               Fiction narrative |         C78 |         S01 |       10.61 - WRITTEN:595
+      700398 |                         Fantasy |         C39 |         S77 |       10.61 - WRITTEN:596
+     2147687 |                      Fanfiction |         C54 |         S81 |       10.61 - WRITTEN:597
+   148206612 |                           Fable |         C33 |         S08 |       10.61 - WRITTEN:598
+     6948139 |         Biography/Autobiography |         C08 |         S54 |       10.61 - WRITTEN:599
+       91990 |                 Science fiction |         C26 |         S44 |       10.61 - WRITTEN:600
+     8778748 |             Comic/Graphic Novel |         C57 |         S24 |       10.61 - WRITTEN:601
+          70 |                Fiction in verse |         C22 |         S55 |       10.61 - WRITTEN:602
+
+Next Price is 10.62Selecting Records for price 10.62 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        3860 |                         Classic |         C56 |         S81 |       10.62 - WRITTEN:603
+        2524 |               Fiction narrative |         C24 |         S08 |       10.62 - WRITTEN:604
+         681 |                 Science fiction |         C95 |         S35 |       10.62 - WRITTEN:605
+       62485 |              Historical fiction |         C19 |         S39 |       10.62 - WRITTEN:606
+          47 |                         Fantasy |         C59 |         S61 |       10.62 - WRITTEN:607
+           3 |                          Legend |         C06 |         S33 |       10.62 - WRITTEN:608
+       29016 |                     Short story |         C22 |         S05 |       10.62 - WRITTEN:609
+
+Next Price is 10.63Selecting Records for price 10.63 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    68750290 |                     Short story |         C85 |         S06 |       10.63 - WRITTEN:610
+          69 |                Fiction in verse |         C13 |         S48 |       10.63 - WRITTEN:611
+           7 |                          Horror |         C37 |         S87 |       10.63 - WRITTEN:612
+        1260 |                Fiction in verse |         C36 |         S33 |       10.63 - WRITTEN:613
+     3915185 |               Fiction narrative |         C06 |         S99 |       10.63 - WRITTEN:614
+           2 |                 Crime/Detective |         C13 |         S16 |       10.63 - WRITTEN:615
+   306178681 |                         Classic |         C78 |         S58 |       10.63 - WRITTEN:616
+        5454 |              Historical fiction |         C72 |         S73 |       10.63 - WRITTEN:617
+
+Next Price is 10.64Selecting Records for price 10.64 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       74465 |             Comic/Graphic Novel |         C01 |         S16 |       10.64 - WRITTEN:618
+   880698194 |               Suspense/Thriller |         C77 |         S62 |       10.64 - WRITTEN:619
+         442 |                      Fanfiction |         C17 |         S18 |       10.64 - WRITTEN:620
+    40077486 |               Fiction narrative |         C19 |         S21 |       10.64 - WRITTEN:621
+       74705 |                           Fable |         C32 |         S62 |       10.64 - WRITTEN:622
+   257364733 |                       Tall tale |         C17 |         S94 |       10.64 - WRITTEN:623
+       44618 |                         Classic |         C56 |         S58 |       10.64 - WRITTEN:624
+        8369 |               Fiction narrative |         C17 |         S54 |       10.64 - WRITTEN:625
+         254 |                      Mythopoeia |         C23 |         S81 |       10.64 - WRITTEN:626
+
+Next Price is 10.65Selecting Records for price 10.65 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+         482 |                Fiction in verse |         C34 |         S09 |       10.65 - WRITTEN:627
+         413 |                        Textbook |         C70 |         S77 |       10.65 - WRITTEN:628
+     8228709 |             Comic/Graphic Novel |         C42 |         S66 |       10.65 - WRITTEN:629
+           1 |                      Mythopoeia |         C57 |         S18 |       10.65 - SKIPPED
+         571 |              Historical fiction |         C99 |         S96 |       10.65 - WRITTEN:630
+   994673694 |               Fiction narrative |         C34 |         S50 |       10.65 - WRITTEN:631
+       36995 |               Realistic fiction |         C67 |         S68 |       10.65 - WRITTEN:632
+      218189 |                          Legend |         C32 |         S40 |       10.65 - WRITTEN:633
+   390583983 |                       Tall tale |         C16 |         S10 |       10.65 - WRITTEN:634
+         503 |                      Fairy tale |         C81 |         S84 |       10.65 - WRITTEN:635
+         920 |              Historical fiction |         C34 |         S11 |       10.65 - WRITTEN:636
+        3808 |                          Legend |         C66 |         S07 |       10.65 - WRITTEN:637
+       14778 |                 Crime/Detective |         C12 |         S88 |       10.65 - WRITTEN:638
+
+Next Price is 10.66Selecting Records for price 10.66 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       32318 |                      Mythopoeia |         C78 |         S09 |       10.66 - WRITTEN:639
+          39 |                          Legend |         C64 |         S86 |       10.66 - WRITTEN:640
+         996 |                  Reference book |         C65 |         S25 |       10.66 - WRITTEN:641
+      560748 |            Narrative nonfiction |         C33 |         S15 |       10.66 - WRITTEN:642
+       20724 |             Comic/Graphic Novel |         C73 |         S24 |       10.66 - WRITTEN:643
+     7235726 |                          Legend |         C50 |         S05 |       10.66 - WRITTEN:644
+
+Next Price is 10.67Selecting Records for price 10.67 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   368809423 |                       Tall tale |         C50 |         S26 |       10.67 - WRITTEN:645
+      217721 |                         Fantasy |         C00 |         S47 |       10.67 - WRITTEN:646
+      504711 |                 Crime/Detective |         C72 |         S60 |       10.67 - WRITTEN:647
+   208633346 |             Comic/Graphic Novel |         C72 |         S67 |       10.67 - WRITTEN:648
+   122529617 |                     Short story |         C66 |         S95 |       10.67 - WRITTEN:649
+          33 |                       Tall tale |         C83 |         S38 |       10.67 - WRITTEN:650
+   416918545 |                         Western |         C80 |         S75 |       10.67 - WRITTEN:651
+         466 |                 Science fiction |         C13 |         S79 |       10.67 - WRITTEN:652
+
+Next Price is 10.68Selecting Records for price 10.68 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    49371596 |             Comic/Graphic Novel |         C08 |         S46 |       10.68 - WRITTEN:653
+          87 |                           Fable |         C00 |         S60 |       10.68 - WRITTEN:654
+       61285 |                Fiction in verse |         C79 |         S15 |       10.68 - WRITTEN:655
+          95 |               Fiction narrative |         C77 |         S57 |       10.68 - WRITTEN:656
+
+Next Price is 10.69Selecting Records for price 10.69 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       20236 |                      Fairy tale |         C33 |         S02 |       10.69 - WRITTEN:657
+          89 |                      Fanfiction |         C41 |         S54 |       10.69 - WRITTEN:658
+      541466 |              Historical fiction |         C46 |         S07 |       10.69 - WRITTEN:659
+       46837 |                  Reference book |         C69 |         S54 |       10.69 - WRITTEN:660
+           8 |             Comic/Graphic Novel |         C54 |         S35 |       10.69 - WRITTEN:661
+      358168 |                          Horror |         C10 |         S21 |       10.69 - WRITTEN:662
+        8611 |                      Fairy tale |         C21 |         S67 |       10.69 - WRITTEN:663
+       31786 |             Comic/Graphic Novel |         C32 |         S32 |       10.69 - WRITTEN:664
+
+Next Price is 10.7Selecting Records for price 10.7 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           9 |                       Mythology |         C14 |         S82 |        10.7 - WRITTEN:665
+   928038186 |                       Tall tale |         C23 |         S91 |        10.7 - WRITTEN:666
+   361140492 |             Comic/Graphic Novel |         C88 |         S05 |        10.7 - WRITTEN:667
+       61956 |                         Western |         C65 |         S64 |        10.7 - WRITTEN:668
+    82101010 |                         Classic |         C24 |         S92 |        10.7 - WRITTEN:669
+         654 |                         Mystery |         C86 |         S56 |        10.7 - WRITTEN:670
+    84231948 |            Narrative nonfiction |         C28 |         S33 |        10.7 - WRITTEN:671
+         713 |                        Textbook |         C06 |         S89 |        10.7 - WRITTEN:672
+    31089011 |                         Classic |         C15 |         S82 |        10.7 - WRITTEN:673
+
+Next Price is 10.71Selecting Records for price 10.71 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+         549 |                 Crime/Detective |         C64 |         S12 |       10.71 - WRITTEN:674
+     2761300 |               Suspense/Thriller |         C15 |         S53 |       10.71 - WRITTEN:675
+           9 |                         Western |         C37 |         S75 |       10.71 - WRITTEN:676
+           0 |                        Folklore |         C39 |         S10 |       10.71 - WRITTEN:677
+          12 |                        Textbook |         C07 |         S57 |       10.71 - WRITTEN:678
+     7801209 |                          Speech |         C91 |         S72 |       10.71 - WRITTEN:679
+     5820391 |                         Mystery |         C73 |         S06 |       10.71 - WRITTEN:680
+          21 |                         Western |         C40 |         S49 |       10.71 - WRITTEN:681
+     4741001 |            Narrative nonfiction |         C52 |         S77 |       10.71 - WRITTEN:682
+           3 |                         Western |         C01 |         S11 |       10.71 - WRITTEN:683
+
+Next Price is 10.72Selecting Records for price 10.72 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          54 |             Comic/Graphic Novel |         C60 |         S20 |       10.72 - WRITTEN:684
+          35 |                      Mythopoeia |         C42 |         S18 |       10.72 - WRITTEN:685
+       31247 |            Narrative nonfiction |         C86 |         S71 |       10.72 - WRITTEN:686
+        6325 |               Fiction narrative |         C77 |         S28 |       10.72 - WRITTEN:687
+   640248214 |                         Classic |         C70 |         S48 |       10.72 - WRITTEN:688
+    10536769 |                       Mythology |         C10 |         S26 |       10.72 - WRITTEN:689
+    17211635 |                     Short story |         C70 |         S50 |       10.72 - WRITTEN:690
+    44409954 |         Biography/Autobiography |         C48 |         S30 |       10.72 - WRITTEN:691
+     5645262 |             Comic/Graphic Novel |         C83 |         S36 |       10.72 - WRITTEN:692
+
+Next Price is 10.73Selecting Records for price 10.73 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           3 |            Narrative nonfiction |         C36 |         S54 |       10.73 - WRITTEN:693
+           2 |                         Western |         C50 |         S69 |       10.73 - WRITTEN:694
+          30 |                          Legend |         C70 |         S48 |       10.73 - WRITTEN:695
+           7 |                           Humor |         C30 |         S80 |       10.73 - WRITTEN:696
+          64 |                 Crime/Detective |         C42 |         S31 |       10.73 - WRITTEN:697
+       37857 |                          Legend |         C75 |         S62 |       10.73 - WRITTEN:698
+   191426713 |                           Humor |         C42 |         S35 |       10.73 - WRITTEN:699
+        3102 |                         Western |         C44 |         S28 |       10.73 - WRITTEN:700
+
+Next Price is 10.74Selecting Records for price 10.74 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      738107 |               Realistic fiction |         C91 |         S27 |       10.74 - WRITTEN:701
+       78545 |                          Horror |         C85 |         S44 |       10.74 - WRITTEN:702
+        3167 |                           Fable |         C43 |         S12 |       10.74 - WRITTEN:703
+
+Next Price is 10.75Selecting Records for price 10.75 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       35390 |                  Reference book |         C34 |         S17 |       10.75 - WRITTEN:704
+       55932 |                      Mythopoeia |         C70 |         S55 |       10.75 - WRITTEN:705
+     6816821 |                  Reference book |         C74 |         S74 |       10.75 - WRITTEN:706
+       25795 |                Fiction in verse |         C24 |         S38 |       10.75 - WRITTEN:707
+        7536 |                 Science fiction |         C84 |         S64 |       10.75 - WRITTEN:708
+        9297 |                Fiction in verse |         C95 |         S30 |       10.75 - WRITTEN:709
+           1 |              Historical fiction |         C50 |         S17 |       10.75 - SKIPPED
+   385527375 |                 Crime/Detective |         C22 |         S77 |       10.75 - WRITTEN:710
+           2 |                           Essay |         C47 |         S72 |       10.75 - WRITTEN:711
+       28501 |         Biography/Autobiography |         C24 |         S46 |       10.75 - WRITTEN:712
+      926025 |                           Humor |         C33 |         S14 |       10.75 - WRITTEN:713
+         935 |            Narrative nonfiction |         C42 |         S55 |       10.75 - WRITTEN:714
+     1900151 |               Fiction narrative |         C24 |         S03 |       10.75 - WRITTEN:715
+        2521 |                           Humor |         C17 |         S58 |       10.75 - WRITTEN:716
+        1808 |             Comic/Graphic Novel |         C07 |         S00 |       10.75 - WRITTEN:717
+       57562 |                       Tall tale |         C38 |         S16 |       10.75 - WRITTEN:718
+
+Next Price is 10.76Selecting Records for price 10.76 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          80 |                         Fantasy |         C24 |         S54 |       10.76 - WRITTEN:719
+     6634414 |                      Fairy tale |         C85 |         S13 |       10.76 - WRITTEN:720
+   636017037 |                         Western |         C14 |         S43 |       10.76 - WRITTEN:721
+         443 |                     Short story |         C56 |         S52 |       10.76 - WRITTEN:722
+    38317563 |                       Mythology |         C14 |         S67 |       10.76 - WRITTEN:723
+           1 |                           Fable |         C21 |         S21 |       10.76 - SKIPPED
+        1795 |               Fiction narrative |         C82 |         S75 |       10.76 - WRITTEN:724
+         130 |                 Science fiction |         C50 |         S53 |       10.76 - WRITTEN:725
+        6027 |                       Tall tale |         C07 |         S52 |       10.76 - WRITTEN:726
+         843 |             Comic/Graphic Novel |         C75 |         S82 |       10.76 - WRITTEN:727
+          76 |                          Speech |         C70 |         S57 |       10.76 - WRITTEN:728
+
+Next Price is 10.77Selecting Records for price 10.77 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    10179303 |                 Crime/Detective |         C77 |         S70 |       10.77 - WRITTEN:729
+      195644 |               Fiction narrative |         C03 |         S80 |       10.77 - WRITTEN:730
+      252342 |                  Reference book |         C13 |         S75 |       10.77 - WRITTEN:731
+       25466 |               Fiction narrative |         C91 |         S82 |       10.77 - WRITTEN:732
+         148 |                         Mystery |         C78 |         S83 |       10.77 - WRITTEN:733
+      969338 |              Historical fiction |         C22 |         S97 |       10.77 - WRITTEN:734
+         739 |                Fiction in verse |         C26 |         S23 |       10.77 - WRITTEN:735
+       58020 |               Fiction narrative |         C00 |         S27 |       10.77 - WRITTEN:736
+   238804394 |                         Fantasy |         C54 |         S70 |       10.77 - WRITTEN:737
+      901208 |              Historical fiction |         C14 |         S14 |       10.77 - WRITTEN:738
+       73114 |               Fiction narrative |         C00 |         S52 |       10.77 - WRITTEN:739
+
+Next Price is 10.78Selecting Records for price 10.78 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      777046 |               Fiction narrative |         C36 |         S45 |       10.78 - WRITTEN:740
+           6 |               Suspense/Thriller |         C62 |         S24 |       10.78 - WRITTEN:741
+          27 |                 Crime/Detective |         C37 |         S45 |       10.78 - WRITTEN:742
+           0 |                      Fairy tale |         C80 |         S37 |       10.78 - WRITTEN:743
+       72705 |                Fiction in verse |         C16 |         S38 |       10.78 - WRITTEN:744
+    26176052 |                        Folklore |         C27 |         S29 |       10.78 - WRITTEN:745
+           4 |                      Mythopoeia |         C18 |         S76 |       10.78 - WRITTEN:746
+       55621 |             Comic/Graphic Novel |         C45 |         S47 |       10.78 - WRITTEN:747
+   220493756 |                      Mythopoeia |         C97 |         S29 |       10.78 - WRITTEN:748
+   433900575 |                     Short story |         C14 |         S41 |       10.78 - WRITTEN:749
+       90592 |              Historical fiction |         C88 |         S00 |       10.78 - WRITTEN:750
+
+Next Price is 10.79Selecting Records for price 10.79 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   836310139 |                       Mythology |         C12 |         S27 |       10.79 - WRITTEN:751
+   846165722 |                        Folklore |         C58 |         S35 |       10.79 - WRITTEN:752
+          92 |             Comic/Graphic Novel |         C40 |         S70 |       10.79 - WRITTEN:753
+    23388681 |                      Fanfiction |         C14 |         S72 |       10.79 - WRITTEN:754
+       72096 |                      Mythopoeia |         C22 |         S39 |       10.79 - WRITTEN:755
+     8342931 |                         Western |         C51 |         S74 |       10.79 - WRITTEN:756
+      483568 |                 Crime/Detective |         C07 |         S10 |       10.79 - WRITTEN:757
+      277270 |         Biography/Autobiography |         C61 |         S40 |       10.79 - WRITTEN:758
+
+Next Price is 10.8Selecting Records for price 10.8 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          10 |                          good10 |          C9 |          S9 |       10.80 - WRITTEN:759
+          62 |               Suspense/Thriller |         C61 |         S14 |        10.8 - WRITTEN:760
+        2150 |                           Humor |         C37 |         S65 |        10.8 - WRITTEN:761
+          58 |                      Fanfiction |         C82 |         S15 |        10.8 - WRITTEN:762
+     4549283 |                           Humor |         C45 |         S84 |        10.8 - WRITTEN:763
+           2 |               Realistic fiction |         C15 |         S07 |        10.8 - WRITTEN:764
+          31 |                        Folklore |         C11 |         S56 |        10.8 - WRITTEN:765
+     7393062 |                          Horror |         C30 |         S37 |        10.8 - WRITTEN:766
+      231760 |         Biography/Autobiography |         C80 |         S16 |        10.8 - WRITTEN:767
+           7 |                           Essay |         C24 |         S28 |        10.8 - WRITTEN:768
+        1945 |                      Fanfiction |         C08 |         S20 |        10.8 - WRITTEN:769
+           7 |                           Essay |         C75 |         S28 |        10.8 - WRITTEN:770
+
+Next Price is 10.81Selecting Records for price 10.81 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+     1774234 |         Biography/Autobiography |         C75 |         S44 |       10.81 - WRITTEN:771
+           0 |                         Classic |         C17 |         S52 |       10.81 - WRITTEN:772
+          15 |                         Classic |         C02 |         S31 |       10.81 - WRITTEN:773
+    54279534 |               Fiction narrative |         C05 |         S22 |       10.81 - WRITTEN:774
+    11977920 |                      Mythopoeia |         C58 |         S17 |       10.81 - WRITTEN:775
+       96471 |                      Fairy tale |         C23 |         S72 |       10.81 - WRITTEN:776
+      712947 |                     Metafiction |         C63 |         S12 |       10.81 - WRITTEN:777
+        4441 |                       Tall tale |         C38 |         S27 |       10.81 - WRITTEN:778
+     9750252 |               Suspense/Thriller |         C20 |         S91 |       10.81 - WRITTEN:779
+          39 |              Historical fiction |         C72 |         S58 |       10.81 - WRITTEN:780
+     8322698 |                          Legend |         C12 |         S84 |       10.81 - WRITTEN:781
+
+Next Price is 10.82Selecting Records for price 10.82 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   822685991 |         Biography/Autobiography |         C36 |         S26 |       10.82 - WRITTEN:782
+   557102459 |             Comic/Graphic Novel |         C36 |         S73 |       10.82 - WRITTEN:783
+   613254204 |               Fiction narrative |         C87 |         S26 |       10.82 - WRITTEN:784
+       94531 |              Historical fiction |         C33 |         S25 |       10.82 - WRITTEN:785
+        9322 |                          Legend |         C46 |         S58 |       10.82 - WRITTEN:786
+         408 |                         Mystery |         C72 |         S81 |       10.82 - WRITTEN:787
+           3 |                Fiction in verse |         C65 |         S01 |       10.82 - WRITTEN:788
+         587 |                         Western |         C75 |         S30 |       10.82 - WRITTEN:789
+      167309 |                      Mythopoeia |         C58 |         S46 |       10.82 - WRITTEN:790
+         265 |                 Science fiction |         C81 |         S51 |       10.82 - WRITTEN:791
+        8071 |                 Science fiction |         C49 |         S62 |       10.82 - WRITTEN:792
+       99851 |               Fiction narrative |         C25 |         S73 |       10.82 - WRITTEN:793
+      774652 |                        Folklore |         C34 |         S98 |       10.82 - WRITTEN:794
+           0 |            Narrative nonfiction |         C21 |         S84 |       10.82 - WRITTEN:795
+
+Next Price is 10.83Selecting Records for price 10.83 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+         849 |               Fiction narrative |         C60 |         S33 |       10.83 - WRITTEN:796
+   566307381 |                           Humor |         C88 |         S23 |       10.83 - WRITTEN:797
+      901246 |               Suspense/Thriller |         C53 |         S85 |       10.83 - WRITTEN:798
+       20768 |                     Metafiction |         C50 |         S03 |       10.83 - WRITTEN:799
+        2748 |               Fiction narrative |         C00 |         S55 |       10.83 - WRITTEN:800
+          77 |                         Mystery |         C46 |         S74 |       10.83 - WRITTEN:801
+           1 |            Narrative nonfiction |         C08 |         S17 |       10.83 - SKIPPED
+   494980237 |             Comic/Graphic Novel |         C31 |         S40 |       10.83 - WRITTEN:802
+
+Next Price is 10.84Selecting Records for price 10.84 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    45461486 |         Biography/Autobiography |         C92 |         S50 |       10.84 - WRITTEN:803
+      311402 |                          Legend |         C98 |         S99 |       10.84 - WRITTEN:804
+        1387 |         Biography/Autobiography |         C01 |         S12 |       10.84 - WRITTEN:805
+           5 |                           Humor |         C23 |         S11 |       10.84 - WRITTEN:806
+       84910 |                           Essay |         C32 |         S52 |       10.84 - WRITTEN:807
+
+Next Price is 10.85Selecting Records for price 10.85 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       74994 |             Comic/Graphic Novel |         C34 |         S17 |       10.85 - WRITTEN:808
+       31646 |                       Tall tale |         C57 |         S15 |       10.85 - WRITTEN:809
+        3240 |                          Horror |         C65 |         S64 |       10.85 - WRITTEN:810
+     9685982 |                      Mythopoeia |         C15 |         S80 |       10.85 - WRITTEN:811
+     4436099 |                Fiction in verse |         C21 |         S46 |       10.85 - WRITTEN:812
+          30 |                         Classic |         C55 |         S47 |       10.85 - WRITTEN:813
+    30707843 |                     Metafiction |         C40 |         S24 |       10.85 - WRITTEN:814
+           0 |                      Fairy tale |         C65 |         S22 |       10.85 - WRITTEN:815
+       45504 |                        Folklore |         C10 |         S66 |       10.85 - WRITTEN:816
+         832 |                Fiction in verse |         C84 |         S52 |       10.85 - WRITTEN:817
+          70 |                           Humor |         C68 |         S14 |       10.85 - WRITTEN:818
+       45329 |                          Legend |         C10 |         S57 |       10.85 - WRITTEN:819
+         937 |                           Humor |         C92 |         S57 |       10.85 - WRITTEN:820
+   974679477 |                         Classic |         C36 |         S82 |       10.85 - WRITTEN:821
+      987010 |                  Reference book |         C78 |         S57 |       10.85 - WRITTEN:822
+
+Next Price is 10.86Selecting Records for price 10.86 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+       17377 |                       Mythology |         C24 |         S21 |       10.86 - WRITTEN:823
+    16893611 |              Historical fiction |         C45 |         S43 |       10.86 - WRITTEN:824
+           1 |                         Western |         C68 |         S80 |       10.86 - SKIPPED
+       71899 |                         Classic |         C68 |         S19 |       10.86 - WRITTEN:825
+        8923 |                         Western |         C90 |         S36 |       10.86 - WRITTEN:826
+     9156371 |                  Reference book |         C35 |         S22 |       10.86 - WRITTEN:827
+
+Next Price is 10.87Selecting Records for price 10.87 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           7 |                      Fairy tale |         C65 |         S08 |       10.87 - WRITTEN:828
+     3578996 |                       Mythology |         C41 |         S75 |       10.87 - WRITTEN:829
+           8 |                 Crime/Detective |         C39 |         S56 |       10.87 - WRITTEN:830
+          28 |                           Fable |         C98 |         S08 |       10.87 - WRITTEN:831
+      767273 |            Narrative nonfiction |         C27 |         S86 |       10.87 - WRITTEN:832
+      406983 |                         Fantasy |         C83 |         S01 |       10.87 - WRITTEN:833
+           5 |              Historical fiction |         C76 |         S24 |       10.87 - WRITTEN:834
+         269 |                 Crime/Detective |         C52 |         S00 |       10.87 - WRITTEN:835
+          33 |                         Mystery |         C84 |         S42 |       10.87 - WRITTEN:836
+          97 |                      Fairy tale |         C80 |         S67 |       10.87 - WRITTEN:837
+
+Next Price is 10.88Selecting Records for price 10.88 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        7347 |                         Western |         C83 |         S78 |       10.88 - WRITTEN:838
+           8 |                 Science fiction |         C48 |         S42 |       10.88 - WRITTEN:839
+       12296 |                           Humor |         C59 |         S20 |       10.88 - WRITTEN:840
+      832108 |                          Horror |         C37 |         S77 |       10.88 - WRITTEN:841
+        5354 |                        Folklore |         C55 |         S32 |       10.88 - WRITTEN:842
+       91128 |                     Metafiction |         C35 |         S10 |       10.88 - WRITTEN:843
+         678 |               Fiction narrative |         C74 |         S67 |       10.88 - WRITTEN:844
+          59 |         Biography/Autobiography |         C53 |         S16 |       10.88 - WRITTEN:845
+
+Next Price is 10.89Selecting Records for price 10.89 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+        9675 |                 Science fiction |         C74 |         S60 |       10.89 - WRITTEN:846
+      359071 |                      Fairy tale |         C79 |         S74 |       10.89 - WRITTEN:847
+           7 |                         Western |         C33 |         S24 |       10.89 - WRITTEN:848
+          79 |                         Mystery |         C31 |         S50 |       10.89 - WRITTEN:849
+      665065 |                          Legend |         C55 |         S03 |       10.89 - WRITTEN:850
+    11262490 |                           Humor |         C94 |         S14 |       10.89 - WRITTEN:851
+           4 |                          Horror |         C51 |         S81 |       10.89 - WRITTEN:852
+      278129 |                      Fairy tale |         C64 |         S15 |       10.89 - WRITTEN:853
+          78 |            Narrative nonfiction |         C10 |         S58 |       10.89 - WRITTEN:854
+
+Next Price is 10.9Selecting Records for price 10.9 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    41704107 |                         Western |         C24 |         S69 |        10.9 - WRITTEN:855
+       61167 |                           Humor |         C13 |         S76 |        10.9 - WRITTEN:856
+          50 |               Fiction narrative |         C30 |         S62 |        10.9 - WRITTEN:857
+         541 |                          Legend |         C54 |         S68 |        10.9 - WRITTEN:858
+     7991050 |                         Classic |         C18 |         S86 |        10.9 - WRITTEN:859
+      285716 |                         Fantasy |         C58 |         S73 |        10.9 - WRITTEN:860
+        8513 |                      Fairy tale |         C60 |         S26 |        10.9 - WRITTEN:861
+     9219422 |               Fiction narrative |         C39 |         S37 |        10.9 - WRITTEN:862
+      721226 |                Fiction in verse |         C55 |         S16 |        10.9 - WRITTEN:863
+   153342701 |               Realistic fiction |         C16 |         S08 |        10.9 - WRITTEN:864
+      240725 |                        Folklore |         C11 |         S65 |        10.9 - WRITTEN:865
+          26 |             Comic/Graphic Novel |         C95 |         S01 |        10.9 - WRITTEN:866
+        1350 |                      Fairy tale |         C04 |         S75 |        10.9 - WRITTEN:867
+
+Next Price is 10.91Selecting Records for price 10.91 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           4 |                         Classic |         C49 |         S46 |       10.91 - WRITTEN:868
+         917 |            Narrative nonfiction |         C74 |         S66 |       10.91 - WRITTEN:869
+      256713 |               Realistic fiction |         C36 |         S84 |       10.91 - WRITTEN:870
+   542729795 |             Comic/Graphic Novel |         C81 |         S77 |       10.91 - WRITTEN:871
+        5203 |                  Reference book |         C53 |         S83 |       10.91 - WRITTEN:872
+           9 |                        Textbook |         C50 |         S06 |       10.91 - WRITTEN:873
+          90 |                 Crime/Detective |         C82 |         S71 |       10.91 - WRITTEN:874
+       98345 |                         Fantasy |         C26 |         S13 |       10.91 - WRITTEN:875
+           5 |                        Folklore |         C46 |         S87 |       10.91 - WRITTEN:876
+   317065858 |                           Essay |         C87 |         S28 |       10.91 - WRITTEN:877
+           1 |                      Fairy tale |         C07 |         S42 |       10.91 - SKIPPED
+
+Next Price is 10.92Selecting Records for price 10.92 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+     1065992 |                     Short story |         C44 |         S51 |       10.92 - WRITTEN:878
+      707997 |                        Textbook |         C31 |         S62 |       10.92 - WRITTEN:879
+       74497 |                Fiction in verse |         C81 |         S88 |       10.92 - WRITTEN:880
+          79 |                     Metafiction |         C66 |         S45 |       10.92 - WRITTEN:881
+      241158 |                Fiction in verse |         C84 |         S11 |       10.92 - WRITTEN:882
+
+Next Price is 10.93Selecting Records for price 10.93 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   749432762 |                          Legend |         C44 |         S91 |       10.93 - WRITTEN:883
+         508 |                          Legend |         C27 |         S05 |       10.93 - WRITTEN:884
+           0 |                         Fantasy |         C65 |         S38 |       10.93 - WRITTEN:885
+           7 |                      Mythopoeia |         C58 |         S37 |       10.93 - WRITTEN:886
+       30915 |                         Western |         C73 |         S29 |       10.93 - WRITTEN:887
+          30 |                      Fairy tale |         C34 |         S75 |       10.93 - WRITTEN:888
+    55630322 |                           Humor |         C32 |         S32 |       10.93 - WRITTEN:889
+           9 |               Fiction narrative |         C48 |         S50 |       10.93 - WRITTEN:890
+   565433069 |                Fiction in verse |         C31 |         S14 |       10.93 - WRITTEN:891
+          63 |               Suspense/Thriller |         C48 |         S80 |       10.93 - WRITTEN:892
+
+Next Price is 10.94Selecting Records for price 10.94 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      263740 |                          Speech |         C56 |         S85 |       10.94 - WRITTEN:893
+           0 |                        Folklore |         C87 |         S90 |       10.94 - WRITTEN:894
+   710115451 |               Realistic fiction |         C85 |         S95 |       10.94 - WRITTEN:895
+          30 |                     Short story |         C59 |         S98 |       10.94 - WRITTEN:896
+
+Next Price is 10.95Selecting Records for price 10.95 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    74800126 |                       Tall tale |         C75 |         S26 |       10.95 - WRITTEN:897
+          84 |                          Speech |         C22 |         S73 |       10.95 - WRITTEN:898
+         365 |                        Textbook |         C30 |         S61 |       10.95 - WRITTEN:899
+        1984 |                         Western |         C74 |         S25 |       10.95 - WRITTEN:900
+    89535010 |                        Folklore |         C29 |         S89 |       10.95 - WRITTEN:901
+          68 |              Historical fiction |         C22 |         S46 |       10.95 - WRITTEN:902
+           1 |               Fiction narrative |         C75 |         S19 |       10.95 - SKIPPED
+
+Next Price is 10.96Selecting Records for price 10.96 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           7 |                         Mystery |         C68 |         S55 |       10.96 - WRITTEN:903
+    25689020 |                         Western |         C68 |         S72 |       10.96 - WRITTEN:904
+   667977830 |                     Metafiction |         C26 |         S38 |       10.96 - WRITTEN:905
+        6186 |                           Humor |         C16 |         S32 |       10.96 - WRITTEN:906
+          88 |             Comic/Graphic Novel |         C46 |         S68 |       10.96 - WRITTEN:907
+         722 |                      Fairy tale |         C68 |         S55 |       10.96 - WRITTEN:908
+         388 |                      Fanfiction |         C17 |         S35 |       10.96 - WRITTEN:909
+       56336 |                     Metafiction |         C32 |         S05 |       10.96 - WRITTEN:910
+     7244470 |               Fiction narrative |         C04 |         S36 |       10.96 - WRITTEN:911
+    11691667 |               Fiction narrative |         C23 |         S39 |       10.96 - WRITTEN:912
+           6 |                          Speech |         C74 |         S56 |       10.96 - WRITTEN:913
+        6997 |               Suspense/Thriller |         C07 |         S12 |       10.96 - WRITTEN:914
+
+Next Price is 10.97Selecting Records for price 10.97 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   334130680 |                           Humor |         C40 |         S82 |       10.97 - WRITTEN:915
+           7 |                           Humor |         C36 |         S41 |       10.97 - WRITTEN:916
+       32578 |                         Classic |         C71 |         S35 |       10.97 - WRITTEN:917
+        9667 |                      Fairy tale |         C98 |         S20 |       10.97 - WRITTEN:918
+        1340 |                       Tall tale |         C52 |         S61 |       10.97 - WRITTEN:919
+     3730305 |                         Classic |         C22 |         S30 |       10.97 - WRITTEN:920
+    61009278 |              Historical fiction |         C32 |         S10 |       10.97 - WRITTEN:921
+         588 |                           Fable |         C54 |         S88 |       10.97 - WRITTEN:922
+       61983 |                          Horror |         C61 |         S13 |       10.97 - WRITTEN:923
+    90249544 |                        Folklore |         C52 |         S23 |       10.97 - WRITTEN:924
+
+Next Price is 10.98Selecting Records for price 10.98 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   883237087 |                         Western |         C75 |         S45 |       10.98 - WRITTEN:925
+       89189 |                          Speech |         C01 |         S32 |       10.98 - WRITTEN:926
+           3 |            Narrative nonfiction |         C84 |         S67 |       10.98 - WRITTEN:927
+           6 |                           Humor |         C56 |         S43 |       10.98 - WRITTEN:928
+         723 |                       Tall tale |         C61 |         S57 |       10.98 - WRITTEN:929
+      491956 |                         Western |         C63 |         S06 |       10.98 - WRITTEN:930
+         634 |                          Legend |         C11 |         S87 |       10.98 - WRITTEN:931
+         904 |                         Western |         C23 |         S76 |       10.98 - WRITTEN:932
+
+Next Price is 10.99Selecting Records for price 10.99 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   710053840 |                           Essay |         C68 |         S44 |       10.99 - WRITTEN:933
+         615 |                      Fairy tale |         C36 |         S08 |       10.99 - WRITTEN:934
+       20587 |             Comic/Graphic Novel |         C53 |         S74 |       10.99 - WRITTEN:935
+        3235 |                         Fantasy |         C37 |         S35 |       10.99 - WRITTEN:936
+           1 |                          Horror |         C31 |         S03 |       10.99 - SKIPPED
+
+Next Price is 11.0Selecting Records for price 11.0 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+           3 |                     Short story |         C08 |         S56 |        11.0 - WRITTEN:937
+      404801 |                        Textbook |         C89 |         S92 |        11.0 - WRITTEN:938
+           2 |                           Essay |         C71 |         S34 |        11.0 - WRITTEN:939
+          64 |                          Legend |         C51 |         S52 |        11.0 - WRITTEN:940
+     3632964 |              Historical fiction |         C07 |         S16 |        11.0 - WRITTEN:941
+          67 |            Narrative nonfiction |         C16 |         S17 |        11.0 - WRITTEN:942
+   146886353 |                       Mythology |         C78 |         S15 |        11.0 - WRITTEN:943
+      794409 |              Historical fiction |         C25 |         S37 |        11.0 - WRITTEN:944
+      203712 |              Historical fiction |         C07 |         S22 |        11.0 - WRITTEN:945
+
+Next Price is 11.01Selecting Records for price 11.01 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          13 |                 Science fiction |         C24 |         S11 |       11.01 - WRITTEN:946
+   986917481 |                           Humor |         C38 |         S29 |       11.01 - WRITTEN:947
+           3 |                  Reference book |         C28 |         S38 |       11.01 - WRITTEN:948
+           2 |                       Tall tale |         C79 |         S44 |       11.01 - SKIPPED
+        2388 |                  Reference book |         C25 |         S55 |       11.01 - WRITTEN:949
+
+Next Price is 11.02Selecting Records for price 11.02 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+    53431091 |                      Fairy tale |         C51 |         S70 |       11.02 - WRITTEN:950
+      715970 |                         Western |         C25 |         S16 |       11.02 - WRITTEN:951
+     2738616 |                     Metafiction |         C58 |         S07 |       11.02 - WRITTEN:952
+       19870 |                           Fable |         C81 |         S77 |       11.02 - WRITTEN:953
+         991 |                          Horror |         C81 |         S25 |       11.02 - WRITTEN:954
+        9581 |                      Mythopoeia |         C31 |         S74 |       11.02 - WRITTEN:955
+           7 |                          Speech |         C74 |         S12 |       11.02 - WRITTEN:956
+           5 |                           Essay |         C47 |         S83 |       11.02 - WRITTEN:957
+
+Next Price is 11.03Selecting Records for price 11.03 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+          33 |                     Short story |         C04 |         S75 |       11.03 - WRITTEN:958
+       69091 |            Narrative nonfiction |         C46 |         S45 |       11.03 - WRITTEN:959
+        2747 |             Comic/Graphic Novel |         C28 |         S72 |       11.03 - WRITTEN:960
+          46 |                        Folklore |         C14 |         S86 |       11.03 - WRITTEN:961
+         784 |                         Western |         C33 |         S62 |       11.03 - WRITTEN:962
+           3 |                      Fairy tale |         C81 |         S55 |       11.03 - WRITTEN:963
+        5611 |              Historical fiction |         C19 |         S02 |       11.03 - WRITTEN:964
+           2 |                         Mystery |         C24 |         S37 |       11.03 - SKIPPED
+          83 |                      Fairy tale |         C11 |         S17 |       11.03 - WRITTEN:965
+         391 |               Fiction narrative |         C52 |         S37 |       11.03 - WRITTEN:966
+       12709 |                         Classic |         C94 |         S02 |       11.03 - WRITTEN:967
+
+Next Price is 11.04Selecting Records for price 11.04 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+   207387516 |                          Speech |         C83 |         S96 |       11.04 - WRITTEN:968
+         351 |                      Fairy tale |         C50 |         S47 |       11.04 - WRITTEN:969
+         330 |                        Folklore |         C68 |         S43 |       11.04 - WRITTEN:970
+
+Next Price is 11.05Selecting Records for price 11.05 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      184789 |                           Fable |         C41 |         S73 |       11.05 - WRITTEN:971
+        5233 |                     Short story |         C95 |         S73 |       11.05 - WRITTEN:972
+           6 |            Narrative nonfiction |         C38 |         S56 |       11.05 - WRITTEN:973
+       64423 |                 Crime/Detective |         C07 |         S53 |       11.05 - WRITTEN:974
+           8 |                          Speech |         C50 |         S17 |       11.05 - WRITTEN:975
+       49208 |              Historical fiction |         C66 |         S39 |       11.05 - WRITTEN:976
+      203616 |                           Fable |         C11 |         S32 |       11.05 - WRITTEN:977
+           8 |                           Humor |         C62 |         S20 |       11.05 - WRITTEN:978
+   596069908 |            Narrative nonfiction |         C52 |         S45 |       11.05 - WRITTEN:979
+      106751 |                         Mystery |         C23 |         S18 |       11.05 - WRITTEN:980
+   265295496 |                       Mythology |         C83 |         S23 |       11.05 - WRITTEN:981
+
+Next Price is 11.06Selecting Records for price 11.06 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+     1288825 |                         Western |         C56 |         S45 |       11.06 - WRITTEN:982
+   744141821 |                  Reference book |         C10 |         S88 |       11.06 - WRITTEN:983
+        4837 |                Fiction in verse |         C67 |         S64 |       11.06 - WRITTEN:984
+        9585 |                           Fable |         C28 |         S83 |       11.06 - WRITTEN:985
+     5849941 |             Comic/Graphic Novel |         C42 |         S00 |       11.06 - WRITTEN:986
+    43111962 |               Realistic fiction |         C22 |         S78 |       11.06 - WRITTEN:987
+         971 |                       Mythology |         C70 |         S96 |       11.06 - WRITTEN:988
+           3 |                          Horror |         C43 |         S00 |       11.06 - WRITTEN:989
+   296580707 |             Comic/Graphic Novel |         C35 |         S63 |       11.06 - WRITTEN:990
+          87 |         Biography/Autobiography |         C80 |         S28 |       11.06 - WRITTEN:991
+    27201984 |                        Folklore |         C10 |         S69 |       11.06 - WRITTEN:992
+          35 |               Realistic fiction |         C95 |         S92 |       11.06 - WRITTEN:993
+
+Next Price is 11.07Selecting Records for price 11.07 :
+------------------------------------------------------------------------------------------
+           ID|                             Name|    Condition|        State|         Price
+------------------------------------------------------------------------------------------
+      830487 |                         Mystery |         C07 |         S10 |       11.07 - WRITTEN:994
+        6136 |                       Mythology |         C42 |         S64 |       11.07 - WRITTEN:995
+     5191914 |                     Short story |         C33 |         S81 |       11.07 - WRITTEN:996
+   834254580 |                        Textbook |         C68 |         S05 |       11.07 - WRITTEN:997
+           5 |                          Legend |         C44 |         S23 |       11.07 - WRITTEN:998
+         683 |                        Folklore |         C42 |         S66 |       11.07 - WRITTEN:999
 Finished

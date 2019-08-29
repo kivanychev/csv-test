@@ -259,8 +259,8 @@ public class App {
 
 
         for(currentPrice = minPrice; currentPrice <= maxPrice; ) {
+            System.out.println("Selecting Records for price " + currentPrice + " :");
             recordsList = GetRecordsForPrice(currentPrice);
-            System.out.println("\r\nRecords for price: " + currentPrice);
 
             // For current price Check if the CSV records with their ID may be put to resulting file
             for(CSVRecord csvRecord : recordsList) {
@@ -270,8 +270,7 @@ public class App {
                 String state = csvRecord.get(ISTATE);
                 String price = csvRecord.get(IPRICE);
 
-                System.out.print("\t" + id + "\t" + name + "\t" + condition + "\t" + state + "\t" + price + " - ");
-
+                System.out.printf("%12s%32s%12s%12s%12s ", id, name, condition, state, price);
                 // Check if record with such ID may be added to 
 
                 // Create counter for ID if it does not exist
@@ -291,7 +290,7 @@ public class App {
                     idMap.replace(id, cntValueStr);
 
                     // Write the CSV record to resulting file
-                    System.out.println("WRITTEN " + outRecordsCnt);
+                    System.out.println(" - WRITTEN:" + outRecordsCnt);
                     csvPrinter.printRecord(id, name, condition, state, price);
 
                     outRecordsCnt++;
@@ -304,13 +303,12 @@ public class App {
                 }
                 else {    
                     // Inform about skipped CSV record
-                    System.out.println("SKIPPED");
+                    System.out.println(" - SKIPPED");
                 }
             }
 
-            System.out.print("\r\nFind nextPrice for " + currentPrice + " ... ");
             currentPrice = FindNextPrice(currentPrice);
-            System.out.println(currentPrice);
+            System.out.print("\r\nNext Price is " + currentPrice);
 
         } // for(currentPrice ...
 
