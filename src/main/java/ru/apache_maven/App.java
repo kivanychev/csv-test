@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2019 , Kirill Ivanychev. All rights reserved.
+ * Use is subject to license terms.
+ *
+ */
+
 package ru.apache_maven;
 
 import org.apache.commons.csv.CSVFormat;
@@ -13,13 +19,17 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
 
-import javax.swing.event.MouseInputListener;
+/**
+ * The {@code App} class Implements price sorting algorithm
+ * {@code App}.
+ *
+ *
+ * @author  Kirill Ianychev
+ * @since 1.0
+ */
 
 public class App {
     public static final boolean DEBUG = false;
@@ -28,18 +38,63 @@ public class App {
     public static final int INAME = 1;
     public static final int ICONDITION = 2;
     public static final int ISTATE = 3;
-    public static final int IPRIICE = 4;
+    public static final int IPRICE = 4;
     public static final String SAMPLE_CSV_FILE = "./result.csv";
 
     // Local variables
     public static double maxPrice;
     public static double minPrice;
     public static String csvPath;
+    public static HashSet<Double> pricesSet;
 
+
+    /**
+     * Reads prices from all file to pricesSet.
+     * Alternative method for FindMinMaxPriceThread()
+     * This method should be called 1st before other methods call  
+     * @param
+     *            
+     * @return none
+     */
+    private static void ReadAllPrices() {
+        pricesSet.clear();
+
+        File myFolder = new File(csvPath);
+        File[] files = myFolder.listFiles();
+    
+        // Check all CSV files
+        for (int i = 0; i < files.length; i++) {
+            if (files[i].isFile()) {
+                if(App.DEBUG) System.out.println("Get prices from: " + files[i].getName());
+            } else {
+                continue;
+            }
+    
+            // Read single CSV file
+            try ( Reader reader = Files.newBufferedReader(Paths.get(csvPath + "/" + files[i].getName()));
+                  CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
+                    .withFirstRecordAsHeader()
+                    .withIgnoreHeaderCase()
+                    .withTrim());
+                ) {
+
+                // Find in current CSV file
+                for (CSVRecord csvRecord : csvParser) {
+                    String price = csvRecord.get(IPRICE);
+                    pricesSet.add(Double.valueOf(price));
+                }
+            }
+            catch(Exception e){
+                e.printStackTrace();
+            } 
+
+        } // for(...) on all CSV files
+
+    }
    
     /**
      * Returns Max and Min values for Price fields in a map.
-     *
+     * This method should be called 1st before other methods call  
      * @param csvPath
      *            A path to the directory that contains CSV files
      * @return none
@@ -82,56 +137,25 @@ public class App {
         
     }
 
+
     /**
      * Returns next price for the specified value.
-     *
      * @param currentPrice
      *            Current value of price that is taken as a reference for finding next one
      * @return value of the next price
      */
     private static double FindNextPrice(double currentPrice) {
         double nextPrice = maxPrice;
-        double csvPrice;
 
-        File myFolder = new File(csvPath);
-        File[] files = myFolder.listFiles();
-    
-        // Check all files
-        for (int i = 0; i < files.length; i++) {
-            if (files[i].isFile()) {
-                if(App.DEBUG) System.out.print("File: " + files[i].getName() + " - ");
-            } else {
-                continue;
+        // Check all prices from pricesSet
+        for (Double price : pricesSet) {
+            if(price.doubleValue() > currentPrice && price.doubleValue() < nextPrice) {
+                nextPrice = price.doubleValue();
             }
-    
-            // Read single CSV file
-            try ( Reader reader = Files.newBufferedReader(Paths.get(csvPath + "/" + files[i].getName()));
-                  CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
-                    .withFirstRecordAsHeader()
-                    .withIgnoreHeaderCase()
-                    .withTrim());
-                ) {
-
-                // Find in current CSV file
-                for (CSVRecord csvRecord : csvParser) {
-                    String price = csvRecord.get(IPRIICE);
-                    csvPrice = Double.parseDouble(price);
-
-                    if(csvPrice > currentPrice && csvPrice < nextPrice) {
-                        nextPrice = csvPrice;
-                    }
-                }
-
-            }
-            catch(Exception e){
-                e.printStackTrace();
-            } 
-
-        } // for(...) on all CSV files
+        }
 
         return nextPrice;
     }
-
 
 
     /**
@@ -166,7 +190,7 @@ public class App {
 
                 // Find in current CSV file
                 for (CSVRecord csvRecord : csvParser) {
-                    String price = csvRecord.get(IPRIICE);
+                    String price = csvRecord.get(IPRICE);
                     csvPrice = Double.parseDouble(price);
 
                     if(csvPrice == currentPrice) {
@@ -206,6 +230,7 @@ public class App {
 
         // Contains IDs for the added CSV records
         HashMap<String, String> idMap = new HashMap<String, String>();
+        pricesSet = new HashSet<Double>();
 
         // Check if the specified path exists
         csvPath = args[2];
@@ -218,6 +243,11 @@ public class App {
         ArrayList<CSVRecord> recordsList;
         double currentPrice;
         int outRecordsCnt = 0;      // top is maxOutRecordsCnt
+
+        System.out.print("Reading all prices...");
+        ReadAllPrices();
+        System.out.println(pricesSet.size() + " values");
+
 
         System.out.println("Finding prices range...");
         FindMinMaxPriceThread();
@@ -238,7 +268,7 @@ public class App {
                 String name = csvRecord.get(INAME);
                 String condition = csvRecord.get(ICONDITION);
                 String state = csvRecord.get(ISTATE);
-                String price = csvRecord.get(IPRIICE);
+                String price = csvRecord.get(IPRICE);
 
                 System.out.print("\t" + id + "\t" + name + "\t" + condition + "\t" + state + "\t" + price + " - ");
 
@@ -261,7 +291,7 @@ public class App {
                     idMap.replace(id, cntValueStr);
 
                     // Write the CSV record to resulting file
-                    System.out.println("WRITTEN");
+                    System.out.println("WRITTEN " + outRecordsCnt);
                     csvPrinter.printRecord(id, name, condition, state, price);
 
                     outRecordsCnt++;
@@ -289,10 +319,21 @@ public class App {
 }
 
 //========================================================================
-// PriceRangeFinder
+// PriceRangeFinderThread
 // Finds min and max price vaues in the specified file
 //========================================================================
 
+
+/**
+ * The {@code PriceRangeFinderThread} class Implements minimum and maximum
+ * price finding algorithm using Thread based search. Every search is 
+ * done in a separate Thread for a single .csv file
+ * {@code PriceRangeFinderThread}.
+ *
+ *
+ * @author  Kirill Ianychev
+ * @since 1.0
+ */
 class PriceRangeFinderThread extends Thread {
     private volatile boolean busy;
     private double minPrice;
@@ -324,7 +365,7 @@ class PriceRangeFinderThread extends Thread {
 
                 // Find in current CSV file
                 for (CSVRecord csvRecord : csvParser) {
-                    String price = csvRecord.get(App.IPRIICE);
+                    String price = csvRecord.get(App.IPRICE);
                     price_double = Double.parseDouble(price);
 
                     if(minPrice == -1.0){
